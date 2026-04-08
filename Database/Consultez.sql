@@ -11,6 +11,10 @@ role ENUM ('admin','user') default 'user',
 created_at timestamp default current_timestamp
 );
 
+
+--  INSERT INTO users (name, email, password, role)
+--  VALUES ('VoraKaushal', 'vorakaushal2004@gmail.com', '$2b$10$4TD2yVqMWLhtA7UgVrTCPu8joRoFoWdyzBAa1xhD53SxihygxVZgi', 'admin'); 
+
 -- 2. CATEGORIES TABLE --
 CREATE TABLE categories(
 id int PRIMARY KEY auto_increment,
@@ -18,6 +22,9 @@ name VARCHAR (100),
 type ENUM ('blog' , 'services'),
 created_at timestamp default current_timestamp
 );
+
+-- INSERT INTO categories (name, type)
+-- VALUES ('Business Services', 'services');
 
 -- 3. SERVICES TABLE --
 CREATE TABLE services(
@@ -57,6 +64,7 @@ created_at timestamp default current_timestamp
 );
 
 
+
 -- 6. TEAM-MEMBERS TABLE --
 create table team_members(
 id int primary key auto_increment,
@@ -79,4 +87,12 @@ feedback TEXT ,
 rating INT check (rating between 1 AND 5),
 image varchar(255),
 created_at timestamp default current_timestamp 
-);    
+);   
+
+
+select*from users;
+select*from services;
+select*from categories;
+
+
+ 

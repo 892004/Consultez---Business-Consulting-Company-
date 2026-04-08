@@ -2,18 +2,35 @@ USE Consultez ;
 
 
 -- -- auth -- -- 
--- 1. sp_register_user -- 
-DELIMITER $$ 
-CREATE PROCEDURE sp_register_user(
-IN p_name varchar (100),
-IN p_email varchar (150),
-IN p_password varchar (255),
-IN p_role varchar (10)
+-- 1. sp_login_admin -- 
+DELIMITER $$
+
+CREATE PROCEDURE sp_admin_login(
+    IN p_email VARCHAR(150)
 )
-BEGIN 
-insert into users (name , email , password , role) 
-values (p_name,p_email,p_password,p_role);
-END $$ 
+BEGIN
+    SELECT * 
+    FROM users 
+    WHERE email = p_email AND role = 'admin';
+END $$
+
+DELIMITER ;
+-- 1. sp_register_user -- 
+DELIMITER $$
+
+CREATE PROCEDURE sp_register_user(
+    IN p_name VARCHAR(100),
+    IN p_email VARCHAR(150),
+    IN p_password VARCHAR(255),
+    IN p_phone VARCHAR(20)
+)
+BEGIN
+    INSERT INTO users (name, email, password, phone, role)
+    VALUES (p_name, p_email, p_password, p_phone, 'user');
+END $$
+
+DELIMITER ;
+
 
 -- 2. sp_login_user --
 DELIMITER $$
@@ -23,8 +40,6 @@ IN p_email varchar(150)
 BEGIN 
 select*from users where email = p_email;
 END $$
-
-
 
 -- --  users  -- -- 
 -- 1. sp_get_users -- 
@@ -57,18 +72,19 @@ END $$
 -- --  SERVICES -- -- 
 -- 1. sp_add_services --  
 DELIMITER $$
-create procedure sp_add_service(
-    IN p_title varchar(150),
-    IN p_slug varchar(150),
+
+CREATE PROCEDURE sp_add_service(
+    IN p_title VARCHAR(150),
+    IN p_slug VARCHAR(150),
     IN p_description TEXT,
-    IN p_image varchar (255),
-    IN p_category_id int
+    IN p_image VARCHAR(255),
+    IN p_category_id INT
 )
 BEGIN 
-insert into services (title , slug , description , image , category_id)
-values (p_title , p_slug , p_description , p_image , p_category_id);
-END $$ 
-
+    INSERT INTO services (title, slug, description, image, category_id)
+    VALUES (p_title, p_slug, p_description, p_image, p_category_id);
+END $$
+DELIMITER ;
 
 
 --  2. sp_get_services -- 
@@ -400,6 +416,7 @@ delete from testimonials where id =  p_id;
 END $$ 
 
 
+SHOW CREATE PROCEDURE sp_add_service;
 
 
 
