@@ -8,6 +8,7 @@ const categoryRoutes =  require('./routes/categoryRoutes');
 const blogRoutes = require('./routes/blogRoutes');
 const inquiryRoutes = require('./routes/inquiryRoutes');
 const TeammemberRoutes = require ('./routes/TeamMemberRoutes');
+const testimonialRoutes = require('./routes/testimonialRoutes');
 
 
 const app = express();
@@ -29,7 +30,7 @@ app.use('/api/admin', adminRoutes);
 app.use('/api/service',serviceRoutes);
 
 // CATEGORY ROUTES
-app.use('/api/category',categoryRoutes)
+app.use('/api/category',categoryRoutes);
 
 // BLOG ROUTES 
 app.use('/api/blogs' , blogRoutes);
@@ -38,6 +39,8 @@ app.use('/api/blogs' , blogRoutes);
 app.use('/api/inquiry' , inquiryRoutes);
 
 // TEAM MEMBER ROUTES
-app.use('/api/team-member',TeammemberRoutes)
+app.use('/api/team-member',TeammemberRoutes);
 
+// TESTIMONIALS ROUTES
+app.use('/api/testimonial' , testimonialRoutes);
 module.exports = app;
