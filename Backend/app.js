@@ -6,6 +6,7 @@ const adminRoutes = require('./routes/adminRoutes');
 const serviceRoutes = require("./routes/serviceRoutes");
 const categoryRoutes =  require('./routes/categoryRoutes');
 const blogRoutes = require('./routes/blogRoutes');
+const inquiryRoutes = require('./routes/inquiryRoutes');
 
 
 const app = express();
@@ -31,5 +32,8 @@ app.use('/api/category',categoryRoutes)
 
 // BLOG ROUTES 
 app.use('/api/blogs' , blogRoutes);
+
+// INQUIRY ROUTES
+app.use('/api/inquiry' , inquiryRoutes);
 
 module.exports = app;
