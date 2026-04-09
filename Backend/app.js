@@ -7,6 +7,7 @@ const serviceRoutes = require("./routes/serviceRoutes");
 const categoryRoutes =  require('./routes/categoryRoutes');
 const blogRoutes = require('./routes/blogRoutes');
 const inquiryRoutes = require('./routes/inquiryRoutes');
+const TeammemberRoutes = require ('./routes/TeamMemberRoutes');
 
 
 const app = express();
@@ -35,5 +36,8 @@ app.use('/api/blogs' , blogRoutes);
 
 // INQUIRY ROUTES
 app.use('/api/inquiry' , inquiryRoutes);
+
+// TEAM MEMBER ROUTES
+app.use('/api/team-member',TeammemberRoutes)
 
 module.exports = app;
