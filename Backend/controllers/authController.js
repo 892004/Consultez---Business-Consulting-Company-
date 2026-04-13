@@ -67,3 +67,13 @@ exports.loginUser =  async (req , res ) =>{
     }
 }
  
+
+//  GET DASHBOARD 
+exports.getDashboardCounts = async (req, res) => {
+  try {
+    const [result] = await db.query("CALL sp_dashboard_counts()");
+    res.json(result[0][0]);
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+};
