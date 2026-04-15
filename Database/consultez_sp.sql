@@ -58,8 +58,22 @@ BEGIN
 select*from users where id = p_id;
 END $$ 
 
+-- 3. update user --
+DELIMITER $$
 
--- 3. sp_delete_user --
+CREATE PROCEDURE sp_update_user_status(
+    IN p_id INT,
+    IN p_status VARCHAR(20)
+)
+BEGIN
+    UPDATE users
+    SET status = p_status
+    WHERE id = p_id;
+END $$
+
+DELIMITER ; 
+
+-- 4. sp_delete_user --
 DELIMITER $$ 
 create procedure sp_delete_user(
 IN p_id int
@@ -67,6 +81,8 @@ IN p_id int
 BEGIN 
 delete from users where id = p_id;
 END $$ 
+
+
 
 
 -- --  SERVICES -- -- 
@@ -150,28 +166,47 @@ END $$
 
 
 -- 2. sp_get_blogs --
-DELIMITER $$ 
-create procedure sp_get_blogs()
+DELIMITER $$
+
+CREATE PROCEDURE sp_get_blogs()
 BEGIN
-select*from blogs;
-END $$ 
+    SELECT 
+        b.*,
+        u.name AS author_name
+    FROM blogs b
+    LEFT JOIN users u ON b.author_id = u.id;
+END $$
+
+DELIMITER ;
 
 
 -- 3. sp_get_blog_by_id --
-DELIMITER $$ 
-create procedure sp_get_blog_by_id(IN p_id  INT)
-BEGIN 
-select*from blogs where id = p_id;
-END $$ 
+
+DELIMITER $$
+CREATE PROCEDURE sp_get_blog_by_id(IN p_id INT)
+BEGIN
+    SELECT 
+        b.*,
+        u.name AS author_name
+    FROM blogs b
+    LEFT JOIN users u ON b.author_id = u.id
+    WHERE b.id = p_id;
+END $$
+DELIMITER ;
 
 
 -- 4. sp_get_blog_by_slug -- 
-DELIMITER $$ 
-create procedure sp_get_blog_by_slug(IN p_slug varchar(200))
-BEGIN 
-select*from blogs where slug = p_slug;
-END $$ 
-
+DELIMITER $$
+CREATE PROCEDURE sp_get_blog_by_slug(IN p_slug VARCHAR(200))
+BEGIN
+    SELECT 
+        b.*,
+        u.name AS author_name
+    FROM blogs b
+    LEFT JOIN users u ON b.author_id = u.id
+    WHERE b.slug = p_slug;
+END $$
+DELIMITER ;
 
 -- 5. sp_update_blog -- 
 DELIMITER $$ 
@@ -199,26 +234,71 @@ END $$
 
 
 -- 7. sp_get_blog_paginated -- 
-DELIMITER $$ 
-create procedure sp_get_blogs_paginated(
-    IN p_page int,
-    IN p_limit int
+DELIMITER $$
+
+CREATE PROCEDURE sp_get_blogs_paginated(
+    IN p_page INT,
+    IN p_limit INT
 )
 BEGIN
-DECLARE offset_val INT;
-SET offset_val = (p_page - 1 ) * p_limit;
-select *from blogs LIMIT p_limit OFFSET offset_val;
-END $$ 
+    DECLARE offset_val INT;
+
+    SET offset_val = (p_page - 1) * p_limit;
+
+SELECT 
+    b.id,
+    b.title,
+    b.slug,
+    b.content,
+    b.image,
+    b.author_id,
+    b.category_id,
+    b.created_at,
+    u.name AS author_name,
+    c.name AS category_name
+FROM blogs b
+LEFT JOIN users u ON b.author_id = u.id
+LEFT JOIN categories c ON b.category_id = c.id
+LIMIT p_limit OFFSET offset_val;
+
+END $$
+
+DELIMITER ;
+
 
 
 
 -- 8. sp_search_ blogs -- 
-DELIMITER $$ 
-create procedure sp_search_blogs(IN p_keyword varchar(100))
+DELIMITER $$
+
+CREATE PROCEDURE sp_search_blogs(IN p_keyword VARCHAR(100))
 BEGIN
-select*from blogs 
-WHERE title LIKE CONCAT('%' , p_keyword , '%');
-END $$  
+
+    SELECT 
+        b.id,
+        b.title,
+        b.slug,
+        b.content,
+        b.image,
+        b.author_id,
+        b.category_id,
+        b.created_at,
+        u.name AS author_name
+    FROM blogs b
+    LEFT JOIN users u ON b.author_id = u.id
+    WHERE 
+        b.title LIKE CONCAT('%', p_keyword, '%')
+        OR b.content LIKE CONCAT('%', p_keyword, '%')
+    ORDER BY 
+        CASE 
+            WHEN b.title LIKE CONCAT(p_keyword, '%') THEN 1
+            WHEN b.title LIKE CONCAT('%', p_keyword, '%') THEN 2
+            ELSE 3
+        END;
+
+END $$
+
+DELIMITER ;
 
 
 
@@ -420,4 +500,19 @@ SHOW CREATE PROCEDURE sp_add_service;
 
 
 
+--  DASHBOARD -- 
+DELIMITER $$
 
+CREATE PROCEDURE sp_dashboard_counts()
+BEGIN
+    SELECT 
+        (SELECT COUNT(*) FROM users WHERE role = 'user') AS total_users,
+        (SELECT COUNT(*) FROM categories) AS total_categories,
+        (SELECT COUNT(*) FROM services) AS total_services,
+        (SELECT COUNT(*) FROM blogs) AS total_blogs,
+        (SELECT COUNT(*) FROM team_members) AS total_team_members,
+        (SELECT COUNT(*) FROM testimonials) AS total_testimonials,
+        (SELECT COUNT(*) FROM inquiries) AS total_inquiries;
+END $$
+
+DELIMITER ;

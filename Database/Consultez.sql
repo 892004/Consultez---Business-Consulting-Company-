@@ -11,6 +11,9 @@ role ENUM ('admin','user') default 'user',
 created_at timestamp default current_timestamp
 );
 
+ALTER TABLE users 
+ADD COLUMN status VARCHAR(20) DEFAULT 'active';
+
 
 --  INSERT INTO users (name, email, password, role)
 --  VALUES ('VoraKaushal', 'vorakaushal2004@gmail.com', '$2b$10$4TD2yVqMWLhtA7UgVrTCPu8joRoFoWdyzBAa1xhD53SxihygxVZgi', 'admin'); 
@@ -78,7 +81,6 @@ linkdin varchar (255),
 created_at timestamp default current_timestamp
 );
 
-
 -- 7. TESTIMONIALS TABLE -- 
 create table testimonials(
 id int primary key auto_increment,
@@ -93,6 +95,7 @@ created_at timestamp default current_timestamp
 select*from users;
 select*from services;
 select*from categories;
-
+select*from inquiries;
+select*from blogs;
 
  
