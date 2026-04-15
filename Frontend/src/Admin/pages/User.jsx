@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import axios from "../services/axiosInstance";
 
+
 const Users = () => {
   const [users, setUsers] = useState([]);
-
   const getUsers = async () => {
     try {
       const res = await axios.get("/admin/users");
