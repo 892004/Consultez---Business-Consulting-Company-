@@ -11,6 +11,7 @@ import Services from "../components/All-Services/Services";
 import MissionVision from '../components/MissionVision/MissionVision';
 import GrowthRate from "../components/GrowthRate/GrowthRate";
 import Processing from "../components/ProcessingSec/Processing";
+import CaseStudy from "../components/CashStudy/CaseStudy";
 
 const Homepage1 = () => {
   const ref = useRef();
@@ -140,6 +141,7 @@ const Homepage1 = () => {
     <MissionVision />
     <GrowthRate  />
     <Processing />
+    <CaseStudy />
   </>
   );
 };
