@@ -1,18 +1,18 @@
 import React from 'react'
 import Header1 from '../components/header/header1/Header1'
 import {Outlet} from 'react-router-dom'
+import Footer1 from '../components/Footer/Footer1'
 
 const Layout1 = () => {
   return (
-    <div className="min-h-screen flex flex-col relative overflow-hidden">
-        {/* Header */}
+    <div className="flex flex-col relative overflow-hidden">
+        
         <Header1 />
-
-        {/* Page content */}
-        <main className='flex-1'>
+       
+        <main>
             <Outlet />
         </main>
-        
+  <Footer1 />
     </div>
   )
 }

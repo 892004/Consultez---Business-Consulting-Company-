@@ -16,6 +16,7 @@ import Strategy from "../components/Strategy/Strategy";
 import Consultant from "../components/Consultant/Consultant";
 import Faqs from "../components/FAQS/Faqs";
 import Testimonial from "../components/Testimonials/Testimonial";
+import Blog from "../components/Blogs/Blog";
 
 const Homepage1 = () => {
   const ref = useRef();
@@ -106,7 +107,7 @@ const Homepage1 = () => {
   return (
     <>
     
-    <section  className="Homepage h-screen w-full relative">
+  <section className="Homepage h-[calc(100vh-136px)] w-full relative">
       <img src={current.img} className="block h-full w-full object-cover" />
 
       <img src={BannerShape} className="absolute top-0 right-0" />
@@ -150,6 +151,7 @@ const Homepage1 = () => {
     <Consultant />
     <Faqs />
     <Testimonial />
+    <Blog />
   </>
   );
 };

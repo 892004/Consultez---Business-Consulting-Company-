@@ -30,7 +30,7 @@ const About1 = () => {
   return (
     <section
       onMouseMove={handleMouseMove}
-      className="Aboutus h-screen w-full p-8 flex items-center justify-center"
+      className="Aboutus min-h-screen w-full p-8 flex items-center justify-center"
     >
       {/* LEFT SIDE */}
       <div className="left relative h-full w-[40%] bg-white rounded-2xl shadow-2xl flex items-center justify-center">
