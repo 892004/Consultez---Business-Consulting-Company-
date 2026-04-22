@@ -60,7 +60,7 @@ const Consultant = () => {
   ];
 
   return (
-    <section className="Consultant min-h-screen w-full mt-10 flex flex-col items-center p-20">
+    <section className="Consultant min-h-screen w-full mt-10 flex flex-col items-center p-20 relative ">
       
       {/* BUTTON */}
       <button className="w-fit px-6 py-2 rounded-full tracking-widest font-semibold text-sm bg-[#C6D936]">

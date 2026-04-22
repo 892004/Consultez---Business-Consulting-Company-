@@ -14,6 +14,8 @@ import Processing from "../components/ProcessingSec/Processing";
 import CaseStudy from "../components/CashStudy/CaseStudy";
 import Strategy from "../components/Strategy/Strategy";
 import Consultant from "../components/Consultant/Consultant";
+import Faqs from "../components/FAQS/Faqs";
+import Testimonial from "../components/Testimonials/Testimonial";
 
 const Homepage1 = () => {
   const ref = useRef();
@@ -146,6 +148,8 @@ const Homepage1 = () => {
     <CaseStudy />
     <Strategy />
     <Consultant />
+    <Faqs />
+    <Testimonial />
   </>
   );
 };
