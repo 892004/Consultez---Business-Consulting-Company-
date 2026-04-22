@@ -67,3 +67,20 @@
 .animate-slow-spin {
   animation: slowSpin 10s linear infinite; /* 👈 yaha speed control */
 }
+
+
+
+
+
+@keyframes slowSpin2 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-slow-spin2 {
+  animation: slowSpin 20s linear infinite; /* 👈 yaha speed control */
+}
