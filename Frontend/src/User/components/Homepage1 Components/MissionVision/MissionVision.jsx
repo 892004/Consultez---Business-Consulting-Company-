@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { FaCheck } from "react-icons/fa6";
-import Choose from "../../../assets/Images/choose-image1.jpg";
-import { circularProgressWithCount } from "../../utils/animation";
+import Choose from "../../../../assets/Images/choose-image1.jpg";
+import { circularProgressWithCount } from "../../../utils/animation";
 import { MdArrowOutward } from "react-icons/md";
 import { useLayoutEffect } from "react";
 import gsap from "gsap";

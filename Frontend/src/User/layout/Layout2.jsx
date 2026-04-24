@@ -4,7 +4,7 @@ import {Outlet} from 'react-router-dom'
 
 const Layout2 = () => {
   return (
-    <div className="min-h-screen flex flex-col relative">
+    <div className="flex flex-col relative overflow-hidden">
         {/* Header */}
         <Header2 />
 

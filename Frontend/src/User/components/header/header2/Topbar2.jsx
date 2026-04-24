@@ -71,7 +71,7 @@ const Topbar2 = () => {
           </button>
 
           {currencyOpen && (
-            <div className="absolute top-full mt-2 bg-white text-gray-600 text-sm shadow-md rounded-md w-24 z-50">
+            <div className="absolute top-full mt-2 bg-white text-gray-600 text-sm shadow-md rounded-md w-24">
               {currencies.map((cur) => (
                 <p
                   key={cur}
@@ -105,7 +105,7 @@ const Topbar2 = () => {
           </button>
 
           {langOpen && (
-            <div className="absolute top-full mt-2 bg-white text-gray-600 text-sm shadow-md rounded-md w-28 z-50">
+            <div className="absolute top-full mt-2 bg-white text-gray-600 text-sm shadow-md rounded-md w-28">
               {languages.map((lang) => (
                 <p
                   key={lang}

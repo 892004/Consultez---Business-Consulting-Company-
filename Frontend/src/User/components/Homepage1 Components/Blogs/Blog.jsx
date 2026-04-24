@@ -1,8 +1,8 @@
 import React from "react";
-import Blogbg1 from "../../../assets/Images/blog-image1.jpg";
-import Blogbg2 from "../../../assets/Images/blog-image2.jpg";
-import Blogbg3 from "../../../assets/Images/blog-image3.jpg";
-import '../../../../src/app.css'
+import Blogbg1 from "../../../../assets/Images/blog-image1.jpg";
+import Blogbg2 from "../../../../assets/Images/blog-image2.jpg";
+import Blogbg3 from "../../../../assets/Images/blog-image3.jpg";
+import '../../../../../src/app.css'
 
 import { FaRegCircleUser } from "react-icons/fa6";
 import { FaRegComments } from "react-icons/fa";

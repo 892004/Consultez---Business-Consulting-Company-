@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import AboutImg1 from "../../../assets/Images/about-image1.jpg";
-import AboutImg2 from "../../../assets/Images/about-image2.jpg";
-import aboutInfo from "../../../assets/Images/about-info.png";
+import AboutImg1 from "../../../../assets/Images/about-image1.jpg";
+import AboutImg2 from "../../../../assets/Images/about-image2.jpg";
+import aboutInfo from "../../../../assets/Images/about-info.png";
 import { HiOutlineLightBulb } from "react-icons/hi2";
 import { LiaPencilRulerSolid } from "react-icons/lia";
-import Aboutuser from '../../../assets/Images/about-user.png'
-import Sign from '../../../assets/Images/signature.png'
+import Aboutuser from '../../../../assets/Images/about-user.png'
+import Sign from '../../../../assets/Images/signature.png'
 const About1 = () => {
   const [pos, setPos] = useState({ x: 0, y: 0 });
 

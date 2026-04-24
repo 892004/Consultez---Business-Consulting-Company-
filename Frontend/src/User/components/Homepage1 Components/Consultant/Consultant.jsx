@@ -4,12 +4,12 @@ import { TiSocialFacebook } from "react-icons/ti";
 import { IoLogoInstagram } from "react-icons/io5";
 import { RiLinkedinFill } from "react-icons/ri";
 import { FaBehance } from "react-icons/fa";
-import teamShape from '../../../assets/Images/team-shape.png'
+import teamShape from '../../../../assets/Images/team-shape.png'
 
-import profile1 from "../../../assets/Images/team-image1.jpg";
-import profile2 from "../../../assets/Images/team-image2.jpg";
-import profile3 from "../../../assets/Images/team-image3.jpg";
-import profile4 from "../../../assets/Images/team-image4.jpg";
+import profile1 from "../../../../assets/Images/team-image1.jpg";
+import profile2 from "../../../../assets/Images/team-image2.jpg";
+import profile3 from "../../../../assets/Images/team-image3.jpg";
+import profile4 from "../../../../assets/Images/team-image4.jpg";
 
 const Consultant = () => {
   const Consultant = [

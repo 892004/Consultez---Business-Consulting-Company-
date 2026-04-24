@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from "../../../assets/Images/logo-light.png";
+import logo from "../../../../assets/Images/logo-light.png";
 import { CgMenuGridO } from "react-icons/cg";
 import { IoIosCall } from "react-icons/io";
 import { MdEmail } from "react-icons/md";
@@ -9,7 +9,7 @@ import { FaFacebookF } from "react-icons/fa";
 import { RiTwitterXLine } from "react-icons/ri";
 import { FaVimeoV } from "react-icons/fa";
 import { FaPinterestP } from "react-icons/fa6";
-import footerImg from "../../../assets/Images/footer-one-shape.png";
+import footerImg from "../../../../assets/Images/footer-one-shape.png";
 import { MdArrowOutward } from "react-icons/md";
 import { IoCallOutline } from "react-icons/io5";
 import { MdOutlineMailOutline } from "react-icons/md";

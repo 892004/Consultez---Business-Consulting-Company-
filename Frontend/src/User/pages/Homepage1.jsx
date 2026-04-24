@@ -6,17 +6,17 @@ import homepage3Banner from "../../assets/Images/banner-image3.jpg";
 import BannerShape from "../../assets/Images/banner-shape.png";
 import bannerArray from "../../assets/Images/banner-arry.png";
 import "../../../src/App.css";
-import About1 from "../components/Aboutus/About1";
-import Services from "../components/All-Services/Services";
-import MissionVision from '../components/MissionVision/MissionVision';
-import GrowthRate from "../components/GrowthRate/GrowthRate";
-import Processing from "../components/ProcessingSec/Processing";
-import CaseStudy from "../components/CashStudy/CaseStudy";
-import Strategy from "../components/Strategy/Strategy";
-import Consultant from "../components/Consultant/Consultant";
-import Faqs from "../components/FAQS/Faqs";
-import Testimonial from "../components/Testimonials/Testimonial";
-import Blog from "../components/Blogs/Blog";
+import About1 from "../components/Homepage1 Components/Aboutus/About1";
+import Services from "../components/Homepage1 Components/All-Services/Services";
+import MissionVision from '../components/Homepage1 Components/MissionVision/MissionVision';
+import GrowthRate from "../components/Homepage1 Components/GrowthRate/GrowthRate";
+import Processing from "../components/Homepage1 Components/ProcessingSec/Processing";
+import CaseStudy from "../components/Homepage1 Components/CashStudy/CaseStudy";
+import Strategy from "../components/Homepage1 Components/Strategy/Strategy";
+import Consultant from "../components/Homepage1 Components/Consultant/Consultant";
+import Faqs from "../components/Homepage1 Components/FAQS/Faqs";
+import Testimonial from "../components/Homepage1 Components/Testimonials/Testimonial";
+import Blog from "../components/Homepage1 Components/Blogs/Blog";
 
 const Homepage1 = () => {
   const ref = useRef();
@@ -141,7 +141,7 @@ const Homepage1 = () => {
       </div>
 
     </section>
-    <About1 />
+   <About1 />
     <Services />
     <MissionVision />
     <GrowthRate  />

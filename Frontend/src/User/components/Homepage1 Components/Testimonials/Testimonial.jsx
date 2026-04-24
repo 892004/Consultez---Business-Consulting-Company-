@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
-import TestimonialBg from "../../../assets/Images/testimonial-shape.png";
-import Test1 from "../../../assets/Images/testimonial-image1.jpg";
-import Test2 from "../../../assets/Images/testimonial-image2.jpg";
+import TestimonialBg from "../../../../assets/Images/testimonial-shape.png";
+import Test1 from "../../../../assets/Images/testimonial-image1.jpg";
+import Test2 from "../../../../assets/Images/testimonial-image2.jpg";
 import { RiDoubleQuotesR } from "react-icons/ri";
 import { IoIosArrowRoundBack } from "react-icons/io";
 import { IoIosArrowRoundForward } from "react-icons/io";

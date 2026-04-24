@@ -1,8 +1,8 @@
 import React from "react";
-import Case1 from "../../../assets/Images/case-image1.jpg";
-import Case2 from "../../../assets/Images/case-image2.jpg";
-import Case3 from "../../../assets/Images/case-image3.jpg";
-import Case4 from "../../../assets/Images/case-image4.jpg";
+import Case1 from "../../../../assets/Images/case-image1.jpg";
+import Case2 from "../../../../assets/Images/case-image2.jpg";
+import Case3 from "../../../../assets/Images/case-image3.jpg";
+import Case4 from "../../../../assets/Images/case-image4.jpg";
 import { FiArrowUpRight } from "react-icons/fi";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";

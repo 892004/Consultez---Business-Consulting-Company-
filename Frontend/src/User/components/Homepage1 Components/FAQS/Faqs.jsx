@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import faqleft from "../../../assets/Images/faq-image1.jpg";
-import Map from "../../../assets/Images/faq-map.png";
+import faqleft from "../../../../assets/Images/faq-image1.jpg";
+import Map from "../../../../assets/Images/faq-map.png";
 import { FiChevronDown, FiChevronRight } from "react-icons/fi";
 
 const Faqs = () => {

@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import strategyBG from "../../../assets/Images/strategy-image.jpg";
-import strategyInfo from "../../../assets/Images/strategy-info.png";
+import strategyBG from "../../../../assets/Images/strategy-image.jpg";
+import strategyInfo from "../../../../assets/Images/strategy-info.png";
 import { FiChevronDown, FiChevronRight } from "react-icons/fi";
-import Globle from '../../../assets/Images/stategy-globe.png';
-import info from '../../../assets/Images/strategy-info.png';
+import Globle from '../../../../assets/Images/stategy-globe.png';
+import info from '../../../../assets/Images/strategy-info.png';
 
 const Strategy = () => {
   const [active, setActive] = useState(0);

@@ -1,6 +1,6 @@
 import React from "react";
-import '../ProcessingSec/processing.css'
-import DualCircle from '../../../assets/Images/dual-circle.png'
+import './processing.css'
+import DualCircle from '../../../../assets/Images/dual-circle.png'
 const Processing = () => {
     const cards = [
         {

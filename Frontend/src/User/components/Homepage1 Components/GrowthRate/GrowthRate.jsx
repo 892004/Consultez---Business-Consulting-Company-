@@ -1,8 +1,8 @@
 import React, { useRef, useLayoutEffect } from "react";
-import GrowthBg from "../../../assets/Images/growth-bg.jpg";
+import GrowthBg from "../../../../assets/Images/growth-bg.jpg";
 import gsap from "gsap";
-import { circularProgressWithCount } from "../../utils/animation";
-import GrowthShape from  '../../../assets/Images/growth-shape.png'
+import { circularProgressWithCount } from "../../../utils/animation";
+import GrowthShape from  '../../../../assets/Images/growth-shape.png'
 
 const GrowthRate = () => {
   const sectionRef = useRef(null);

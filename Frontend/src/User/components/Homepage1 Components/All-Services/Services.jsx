@@ -1,20 +1,20 @@
 import React, { useRef, useEffect } from "react";
-import serviceBG from "../../../assets/Images/service-shape.png";
-import serviceLine from "../../../assets/Images/service-line.png";
-import BannerArray from "../../../assets/Images/service-arry-color.png";
-import ServiceCard from "../All-Services/ServiceCard";
+import serviceBG from "../../../../assets/Images/service-shape.png";
+import serviceLine from "../../../../assets/Images/service-line.png";
+import BannerArray from "../../../../assets/Images/service-arry-color.png";
+import ServiceCard from "./ServiceCard";
 import { RiArrowRightUpLongLine } from "react-icons/ri";
-import high from "../../../assets/Images/high.png";
-import party from "../../../assets/Images/party.png";
-import BusinessGrowth from "../../../assets/Images/businessGrowth.png";
-import ServiceBg from "../../../assets/Images/service-item-shape.png";
-import ServiceImg1 from "../../../assets/Images/service-image1.jpg";
-import ServiceImg2 from "../../../assets/Images/service-image2.jpg";
-import ServiceImg3 from "../../../assets/Images/service-image3.jpg";
+import high from "../../../../assets/Images/high.png";
+import party from "../../../../assets/Images/party.png";
+import BusinessGrowth from "../../../../assets/Images/businessGrowth.png";
+import ServiceBg from "../../../../assets/Images/service-item-shape.png";
+import ServiceImg1 from "../../../../assets/Images/service-image1.jpg";
+import ServiceImg2 from "../../../../assets/Images/service-image2.jpg";
+import ServiceImg3 from "../../../../assets/Images/service-image3.jpg";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Autoplay } from "swiper/modules";
-import { fadeUp, slideLeft } from "../../utils/animation";
+import { fadeUp, slideLeft } from "../../../utils/animation";
 
 const Services = () => {
   const ref = useRef();
