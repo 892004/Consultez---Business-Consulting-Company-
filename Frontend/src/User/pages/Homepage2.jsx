@@ -12,6 +12,8 @@ import Aboutus2 from "../components/Homepage2 components/Aboutus2/Aboutus2";
 import Info1 from "../../assets/Images/banner-two-info1.png";
 import Info2 from "../../assets/Images/banner-two-info2.png";
 import Info3 from "../../assets/Images/banner-two-info3.png";
+import Insites from "../components/Homepage2 components/Insites/Insites";
+import Services from "../components/Homepage2 components/services/Services";
 
 const Homepage2 = () => {
 
@@ -186,7 +188,8 @@ const Homepage2 = () => {
       </section>
 
       <Aboutus2 />
-
+      <Insites />
+      <Services />
     </>
   );
 };
