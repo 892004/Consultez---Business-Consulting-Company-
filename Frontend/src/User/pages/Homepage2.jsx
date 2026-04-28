@@ -16,6 +16,8 @@ import Insites from "../components/Homepage2 components/Insites/Insites";
 import Services from "../components/Homepage2 components/services/Services";
 import Testimonials from "../components/Homepage2 components/Testimonials/Testimonials";
 import HowitWork from "../components/Homepage2 components/How it Work/HowitWork";
+import Faqs2 from "../components/Homepage2 components/Faqs2/Faqs2";
+import Gallary from "../components/Homepage2 components/Gallary/Gallary";
 
 const Homepage2 = () => {
 
@@ -194,6 +196,8 @@ const Homepage2 = () => {
       <Services />
       <Testimonials />
       <HowitWork />
+      <Faqs2 />
+      <Gallary />
     </>
   );
 };

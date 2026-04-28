@@ -68,6 +68,21 @@ body{
 }
 
 
+
+@keyframes slideUpDown2{
+  from {
+    transform: translateY(-100px);
+  }
+  to {
+    transform: translateY(100px);
+  }
+}
+
+.animate-slideUpDown2{
+  animation: slideUpDown 0.9s infinite ease-in-out alternate;
+}
+
+
 .stroke-text {
   -webkit-text-stroke: 1px #1f3d3b;
   color: transparent;
