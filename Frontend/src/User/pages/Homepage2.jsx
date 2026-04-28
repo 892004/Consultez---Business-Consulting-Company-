@@ -15,6 +15,7 @@ import Info3 from "../../assets/Images/banner-two-info3.png";
 import Insites from "../components/Homepage2 components/Insites/Insites";
 import Services from "../components/Homepage2 components/services/Services";
 import Testimonials from "../components/Homepage2 components/Testimonials/Testimonials";
+import HowitWork from "../components/Homepage2 components/How it Work/HowitWork";
 
 const Homepage2 = () => {
 
@@ -192,6 +193,7 @@ const Homepage2 = () => {
       <Insites />
       <Services />
       <Testimonials />
+      <HowitWork />
     </>
   );
 };
