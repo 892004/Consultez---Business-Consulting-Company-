@@ -20,6 +20,8 @@ import Faqs2 from "../components/Homepage2 components/Faqs2/Faqs2";
 import Gallary from "../components/Homepage2 components/Gallary/Gallary";
 import Features from "../components/Homepage2 components/Features/Features";
 import Statics from "../components/Homepage2 components/Statics/Statics";
+import TeamMember from "../components/Homepage2 components/Team Member/TeamMember";
+import Contactus from "../components/Homepage2 components/Contact us/Contactus";
 
 const Homepage2 = () => {
 
@@ -202,6 +204,8 @@ const Homepage2 = () => {
       <Gallary />
       <Features />
       <Statics />
+      <TeamMember />
+      <Contactus />
     </>
   );
 };
