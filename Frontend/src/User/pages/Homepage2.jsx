@@ -19,6 +19,7 @@ import HowitWork from "../components/Homepage2 components/How it Work/HowitWork"
 import Faqs2 from "../components/Homepage2 components/Faqs2/Faqs2";
 import Gallary from "../components/Homepage2 components/Gallary/Gallary";
 import Features from "../components/Homepage2 components/Features/Features";
+import Statics from "../components/Homepage2 components/Statics/Statics";
 
 const Homepage2 = () => {
 
@@ -200,6 +201,7 @@ const Homepage2 = () => {
       <Faqs2 />
       <Gallary />
       <Features />
+      <Statics />
     </>
   );
 };
