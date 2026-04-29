@@ -22,6 +22,7 @@ import Features from "../components/Homepage2 components/Features/Features";
 import Statics from "../components/Homepage2 components/Statics/Statics";
 import TeamMember from "../components/Homepage2 components/Team Member/TeamMember";
 import Contactus from "../components/Homepage2 components/Contact us/Contactus";
+import Blogs from "../components/Homepage2 components/Blogs/Blogs";
 
 const Homepage2 = () => {
 
@@ -206,6 +207,7 @@ const Homepage2 = () => {
       <Statics />
       <TeamMember />
       <Contactus />
+      <Blogs />
     </>
   );
 };

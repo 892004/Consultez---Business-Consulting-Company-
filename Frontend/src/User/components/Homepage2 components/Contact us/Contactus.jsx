@@ -99,13 +99,13 @@ const Contactus = () => {
             </div>
           </div>
 
-          <select className="py-3 w-144  px-4 border border-gray-200 rounded-lg  mt-6  focus:outline-1 outline-[#C6D936] ">
-            <option>Choose Our Service</option>
-            <option>UI/UX Design</option>
-            <option>Web Developer</option>
-            <option>Marketing Manager</option>
-            <option>Web Designer</option>
-            <option>Financial Advice</option>
+          <select className="py-3 w-144  px-4 border border-gray-200 rounded-lg  mt-6  focus:outline-1 outline-[#C6D936] appearance-none">
+            <option className="font-semibold text-sm text-gray-600">Choose Our Service</option>
+            <option className="text-sm text-gray-600 hover:bg-gray-200 focus:bg-gray-300">UI/UX Design</option>
+            <option className="text-sm text-gray-600 hover:bg-gray-200 focus:bg-gray-300">Web Developer</option>
+            <option className="text-sm text-gray-600 hover:bg-gray-200 focus:bg-gray-300">Marketing Manager</option>
+            <option className="text-sm text-gray-600 hover:bg-gray-200 focus:bg-gray-300">Web Designer</option>
+            <option className="text-sm text-gray-600 hover:bg-gray-200 focus:bg-gray-300">Financial Advice</option>
           </select>
 
           <textarea
