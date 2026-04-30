@@ -157,12 +157,12 @@ const Homepage2 = () => {
 
           <img
             src={Shape}
-            className="absolute top-20 left-0 animate-zizo will-change-transform"
+            className="absolute top-20 left-0 animate-zizo will-change-transform "
           />
 
           <img
             src={Shape}
-            className="absolute top-20 right-10 animate-zizo will-change-transform"
+            className="absolute top-20 right-10 animate-zizo will-change-transform "
           />
 
 
@@ -170,7 +170,7 @@ const Homepage2 = () => {
 
           <img
             src={Info1}
-            className="z-50 absolute left-10 bottom-10 duration-300 ease-out"
+            className="z-30 absolute left-10 bottom-10 duration-300 ease-out"
             style={{
               transform:`translate(${move.x}px, ${move.y}px)`
             }}
@@ -178,7 +178,7 @@ const Homepage2 = () => {
 
           <img
             src={Info2}
-            className="z-50 absolute top-50 right-20 duration-300 ease-out"
+            className="z-30 absolute top-50 right-20 duration-300 ease-out"
             style={{
               transform:`translate(${move.x * 1.3}px, ${move.y * 1.3}px)`
             }}
@@ -186,7 +186,7 @@ const Homepage2 = () => {
 
           <img
             src={Info3}
-            className="z-50 absolute right-10 bottom-10 duration-300 ease-out"
+            className="z-30 absolute right-10 bottom-10 duration-300 ease-out"
             style={{
               transform:`translate(${move.x * .8}px, ${move.y * .8}px)`
             }}

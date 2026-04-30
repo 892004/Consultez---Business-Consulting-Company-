@@ -222,9 +222,6 @@ transition-all duration-500 rounded-b-2xl"
             </div>            
           </Link>
 
-
-
-
           <Link className="text-[16px]">Contact</Link>
         </ul>
 
