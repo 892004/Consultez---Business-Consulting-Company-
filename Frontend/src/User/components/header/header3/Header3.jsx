@@ -29,7 +29,7 @@ const Header3 = () => {
           className={`transition-all duration-300 ${
             hideTopbar
               ? "-translate-y-full opacity-0 h-0 overflow-hidden"
-              : "translate-y-0 opacity-100 h-12"
+              : "translate-y-5 opacity-100 "
           }`}
         >
           <Topbar3 />

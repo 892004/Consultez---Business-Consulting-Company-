@@ -6,9 +6,7 @@ import { FaPlay } from "react-icons/fa";
 import circleBg from "../../assets/Images/banner-two-circle.png";
 import profileImg from "../../assets/Images/banner-two-image.png";
 import Shape from "../../assets/Images/banner-two-star.png";
-
 import Aboutus2 from "../components/Homepage2 components/Aboutus2/Aboutus2";
-
 import Info1 from "../../assets/Images/banner-two-info1.png";
 import Info2 from "../../assets/Images/banner-two-info2.png";
 import Info3 from "../../assets/Images/banner-two-info3.png";
