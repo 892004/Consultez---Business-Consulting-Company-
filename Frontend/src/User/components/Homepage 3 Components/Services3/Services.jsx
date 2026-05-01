@@ -67,9 +67,6 @@ const Services = () => {
          <button className="py-4 px-10 bg-[#1A4137] rounded-full text-white flex items-center gap-2 cursor-pointer">More Services <FaAngleRight /></button>
         </div>
       </div>
-
-
-
       <div className="flex flex-row relative">
         {services.map((elem ,idx)=>{
             return(

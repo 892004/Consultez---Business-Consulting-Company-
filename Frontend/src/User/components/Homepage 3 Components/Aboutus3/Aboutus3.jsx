@@ -3,7 +3,6 @@ import AboutImg from "../../../../assets/Images/about-three-image.jpg";
 import AboutInfoImg from "../../../../assets/Images/about-three-info.png";
 import "../../../../../src/App.css";
 import { MdArrowOutward } from "react-icons/md";
-
 import aboutInfo from "../../../../assets/Images/aboutInfo.png";
 import Line from "../../../../assets/Images/about-two-line.png";
 

@@ -5,6 +5,7 @@ import { FaPlay } from "react-icons/fa";
 import '../../../src/App.css'
 import Aboutus3 from "../components/Homepage 3 Components/Aboutus3/Aboutus3";
 import Services from "../components/Homepage 3 Components/Services3/Services";
+import Consulting from "../components/Homepage 3 Components/consulting/Consulting";
 
 const Homepage3 = () => {
   const [openVideo, setopenVideo] = useState(false);
@@ -84,6 +85,7 @@ const Homepage3 = () => {
       </section>
       <Aboutus3 />
       <Services />
+      <Consulting />
     </>
   );
 };
