@@ -6,6 +6,7 @@ import '../../../src/App.css'
 import Aboutus3 from "../components/Homepage 3 Components/Aboutus3/Aboutus3";
 import Services from "../components/Homepage 3 Components/Services3/Services";
 import Consulting from "../components/Homepage 3 Components/consulting/Consulting";
+import Objective from "../components/Homepage 3 Components/Objective/Objective";
 
 const Homepage3 = () => {
   const [openVideo, setopenVideo] = useState(false);
@@ -86,6 +87,7 @@ const Homepage3 = () => {
       <Aboutus3 />
       <Services />
       <Consulting />
+      <Objective />
     </>
   );
 };
