@@ -8,6 +8,7 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa6";
+import TeamBg from '../../../../assets/Images/team-three-text.png'
 
 const TeamMember = () => {
   const Team = [
@@ -37,7 +38,8 @@ const TeamMember = () => {
     },
   ];
   return (
-    <section className="TeamMember  min-h-screen w-full relative p-20 flex flex-col">
+    <section className="TeamMember  min-h-screen w-full relative p-20 flex flex-col relative bg-[#F0F7F3]">
+       <img src={TeamBg} className="absolute bottom-0 left-0" />
       {/* Heading */}
       <div className="heading flex flex-row items-center gap-150 z-30">
         <div className="left-head flex flex-col">
@@ -59,7 +61,7 @@ const TeamMember = () => {
       </div>
 
       {/* team members */}
-      <div className="grid grid-cols-4 gap-6">
+      <div className="grid grid-cols-4 gap-6 z-30">
         {Team.map((elem, idx) => {
           return (
             <div className="mt-10 flex flex-col items-center group">

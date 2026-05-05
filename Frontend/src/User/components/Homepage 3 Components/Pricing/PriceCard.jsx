@@ -69,7 +69,7 @@ const PriceCard = () => {
   ];
 
   return (
-    <section className="Price mt-20 px-10 pb-20 flex flex-col items-center justify-center gap-3">
+    <section className="Price mt-20 px-10 py-3  flex flex-col items-center justify-center gap-3 bg-[#F8F5F2]">
 
          <span className="w-40 py-2 flex items-center justify-center bg-[#C6D936] tracking-widest rounded-full font-semibold text-sm ">
           PRICING PLAN

@@ -11,6 +11,7 @@ import CaseStudy from "../components/Homepage 3 Components/CaseStudy/CaseStudy";
 import Brand from "../components/Homepage 3 Components/Branding Swiper/Brand";
 import PriceCard from "../components/Homepage 3 Components/Pricing/PriceCard";
 import TeamMember from "../components/Homepage 3 Components/TeamMember/TeamMember";
+import Testimonial from "../components/Homepage 3 Components/Testimonial/Testimonial";
 const Homepage3 = () => {
 
   const [openVideo, setopenVideo] = useState(false);
@@ -96,6 +97,7 @@ const Homepage3 = () => {
       <CaseStudy />
       <PriceCard />
       <TeamMember />
+      <Testimonial />
     </>
   );
 };
