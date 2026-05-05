@@ -36,7 +36,7 @@ const Consulting = () => {
         </div>
         </div>
     </section>
-  );
+  );  
 };
 
 export default Consulting;
