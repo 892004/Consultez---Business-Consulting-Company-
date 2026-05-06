@@ -20,6 +20,7 @@ import "swiper/css";
 import "swiper/css/effect-fade";
 import Brand from "../components/Homepage 3 Components/Branding Swiper/Brand";
 import Aboutus4 from "../components/Homepage 4 components/AboutUs4/Aboutus4";
+import Service from "../components/Homepage 4 components/Services/Service";
 
 const Homepage4 = () => {
   const [openVideo, setopenVideo] = useState(false);
@@ -165,6 +166,7 @@ const Homepage4 = () => {
         </div>
       </div>
       <Aboutus4 />
+      <Service />
     </>
   );
 };
