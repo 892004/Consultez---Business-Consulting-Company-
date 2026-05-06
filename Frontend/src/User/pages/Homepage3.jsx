@@ -18,7 +18,7 @@ const Homepage3 = () => {
   const [openVideo, setopenVideo] = useState(false);
   return (
     <>
-      <section className="Homepage min-h-screen w-full flex flex-row items-center justify-center   ">
+      <section className="Homepage min-h-screen w-full flex flex-row items-center justify-center ">
         <div className="relative translate-x-20 -translate-y-12">
           <img src={Hero1} className="rounded-2xl" />
 

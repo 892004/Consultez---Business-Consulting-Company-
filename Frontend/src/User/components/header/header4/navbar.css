@@ -34,3 +34,20 @@
     opacity: 0.09;
     background-color: black;
 }
+
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-120%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slideDown {
+  animation: slideDown 0.5s ease forwards;
+}

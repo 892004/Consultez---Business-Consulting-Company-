@@ -4,7 +4,7 @@ import Header4 from '../components/header/header4/Header4'
 
 const Layout4 = () => {
   return (
-    <div className="min-h-screen flex flex-col relative">
+    <div className="flex flex-col relative overflow-hiddenx">
         {/* Header */}
        <Header4 />
 
