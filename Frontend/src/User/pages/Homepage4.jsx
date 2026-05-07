@@ -24,6 +24,8 @@ import Service from "../components/Homepage 4 components/Services/Service";
 import Choose from "../components/Homepage 4 components/Choose/Choose";
 import Process from "../components/Homepage 4 components/Process/Process";
 import Pricing from "../components/Homepage 4 components/Pricing/Pricing";
+import Testimonial from "../components/Homepage 4 components/Testimonials/Testimonial";
+import Blogs from "../components/Homepage2 components/Blogs/Blogs"
 
 const Homepage4 = () => {
   const [openVideo, setopenVideo] = useState(false);
@@ -173,6 +175,8 @@ const Homepage4 = () => {
       <Choose />
       <Process />
       <Pricing />
+      <Testimonial />
+      <Blogs />
     </>
   );
 };
