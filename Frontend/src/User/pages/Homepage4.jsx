@@ -22,6 +22,7 @@ import Brand from "../components/Homepage 3 Components/Branding Swiper/Brand";
 import Aboutus4 from "../components/Homepage 4 components/AboutUs4/Aboutus4";
 import Service from "../components/Homepage 4 components/Services/Service";
 import Choose from "../components/Homepage 4 components/Choose/Choose";
+import Process from "../components/Homepage 4 components/Process/Process";
 
 const Homepage4 = () => {
   const [openVideo, setopenVideo] = useState(false);
@@ -169,6 +170,7 @@ const Homepage4 = () => {
       <Aboutus4 />
       <Service />
       <Choose />
+      <Process />
     </>
   );
 };
