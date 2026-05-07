@@ -6,9 +6,11 @@ import '../../../../../src/App.css'
 import Profile from '../../../../assets/Images/choose-four-image.png'
 import CircleBtn from '../../../../assets/Images/choose-four-circle-btn.png';
 import ChooseInfo from '../../../../assets/Images/banner-two-info2.png';
+import Funface from '../../../../assets/Images/funface-four-shape.png'
 const Choose = () => {
   return (
-    <section className="Choose min-h-screen bg-[#1A4137] p-20 flex flex-col overflow-hidden">
+    <>
+    <section className="Choose min-h-screen bg-[#1A4137] p-20 flex flex-col overflow-hidden relative">
       <div className="heading flex flex-row items-center justify-between border-b pb-10 border-white/20">
         <div className="flex flex-col gap-4">
           <span className="text-sm font-medium tracking-widest w-50 flex items-center justify-center py-2 bg-[#C6D936] rounded-full">
@@ -96,8 +98,8 @@ const Choose = () => {
           </div>
 
               <div className="bottom-shape absolute left-0 bottom-0 ">
-              <div className="h-60 w-25 bg-white/20"></div>
-              <div className="h-25 w-60 bg-white/20 absolute left-0 bottom-0"></div>
+                     <div className="h-60 w-25 bg-white/20"></div>
+                    <div className="h-25 w-60 bg-white/20 absolute left-0 bottom-0"></div>
         </div>
         </div>
         <div className="right w-[40%] p-10 relative">
@@ -107,7 +109,59 @@ const Choose = () => {
           <img src={ChooseInfo} className="absolute top-0 -right-20 animate-slideLR2" />
         </div>
       </div>
+
+
     </section>
+     <div className="container flex items-stretch justify-between px-10 py-16 mt-5">
+  
+  {/* Left Heading */}
+  <h1 className="font-bold text-5xl leading-[1.1] text-[#06210B]">
+    We Help Real <br />
+    People Do More <br />
+    Business Plan
+  </h1>
+
+  {/* Box 1 */}
+  <div className="flex flex-col justify-start items-start border-r border-black/10 pr-16 min-h-[260px]">
+    <img src={Funface} alt="" className="mb-8" />
+
+    <h1 className="font-bold text-5xl leading-none text-[#06210B]">
+      90%
+    </h1>
+
+    <p className="text-[22px] font-semibold mt-5 text-[#06210B]">
+      Clients Satisfactions
+    </p>
+  </div>
+
+  {/* Box 2 */}
+  <div className="flex flex-col justify-start items-start border-r border-black/10 px-16 min-h-[260px]">
+    <img src={Funface} alt="" className="mb-8" />
+
+    <h1 className="font-bold text-5xl leading-none text-[#06210B]">
+      40%
+    </h1>
+
+    <p className="text-[22px] font-semibold mt-5 text-[#06210B]">
+      Decrease Expense
+    </p>
+  </div>
+
+  {/* Box 3 */}
+  <div className="flex flex-col justify-start items-start pl-16 min-h-[260px]">
+    <img src={Funface} alt="" className="mb-8" />
+
+    <h1 className="font-bold text-5xl leading-none text-[#06210B]">
+      7M
+    </h1>
+
+    <p className="text-[22px] font-semibold mt-5 text-[#06210B]">
+      Money Flow Users
+    </p>
+  </div>
+
+</div>
+    </>
   );
 }; 
 
