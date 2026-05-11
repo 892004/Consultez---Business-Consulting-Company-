@@ -4,7 +4,7 @@ import Header5 from '../components/header/header5/Header5'
 
 const Layout5 = () => {
   return (
-    <div className="min-h-screen flex flex-col relative">
+     <div className="flex flex-col relative overflow-hidden">
         {/* Header */}
    <Header5 />
         {/* Page content */}

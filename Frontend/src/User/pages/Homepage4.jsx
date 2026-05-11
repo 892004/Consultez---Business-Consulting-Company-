@@ -25,7 +25,10 @@ import Choose from "../components/Homepage 4 components/Choose/Choose";
 import Process from "../components/Homepage 4 components/Process/Process";
 import Pricing from "../components/Homepage 4 components/Pricing/Pricing";
 import Testimonial from "../components/Homepage 4 components/Testimonials/Testimonial";
-import Blogs from "../components/Homepage2 components/Blogs/Blogs"
+import Blogs from "../components/Homepage2 components/Blogs/Blogs";
+
+import BlogShape from "../../assets/Images/blog-four-shape.png";
+import GetInTouch from "../components/Homepage 4 components/GetInTouch/GetInTouch";
 
 const Homepage4 = () => {
   const [openVideo, setopenVideo] = useState(false);
@@ -50,7 +53,8 @@ const Homepage4 = () => {
 
           <p className="text-center text-lg font-medium text-gray-300 mt-8">
             Consultez is where early adopters and innovation seekers discover
-            dynamic, imaginative<br/> technology before it hits the mainstream.
+            dynamic, imaginative
+            <br /> technology before it hits the mainstream.
           </p>
 
           {/* BUTTONS */}
@@ -176,7 +180,15 @@ const Homepage4 = () => {
       <Process />
       <Pricing />
       <Testimonial />
-      <Blogs />
+      <div className="relative">
+
+        <img src={BlogShape} className="absolute bottom-0" />
+        <div className=" z-50">
+          <Blogs />
+        </div>
+      </div>
+
+      <GetInTouch />
     </>
   );
 };

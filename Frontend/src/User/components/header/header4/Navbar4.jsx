@@ -5,7 +5,7 @@ import LogoDark from "../../../../assets/Images/logo.png"; // add dark logo if y
 import { Link } from "react-router-dom";
 import { FaAngleDown } from "react-icons/fa6";
 import { IoMdCall } from "react-icons/io";
-import '../header4/navbar.css'
+import "../header4/navbar.css";
 
 const Navbar4 = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -24,13 +24,14 @@ const Navbar4 = () => {
       {/* Placeholder to prevent layout jump when navbar becomes fixed */}
       <div className="h-22" />
 
- <section
-  className={`Navbar fixed top-0 left-0 right-0 z-50 h-22 w-full flex items-center justify-between transition-all duration-500
-    ${scrolled
-      ? "bg-white shadow-lg border-b border-gray-100 translate-y-0 opacity-100 px-30"
-      : "bg-[#1A4137] border-b border-white/20 translate-y-0 opacity-100"
+      <section
+        className={`Navbar fixed top-0 left-0 right-0 z-50 h-22 w-full flex items-center justify-between transition-all duration-500
+    ${
+      scrolled
+        ? "bg-white shadow-lg border-b border-gray-100 translate-y-0 opacity-100 px-30"
+        : "bg-[#1A4137] border-b border-white/20 translate-y-0 opacity-100"
     }`}
->
+      >
         {/* Menu - only show when NOT scrolled */}
         {!scrolled && (
           <p className="relative text-white flex items-center justify-center gap-2 text-xl font-medium px-5 cursor-pointer">
@@ -41,217 +42,220 @@ const Navbar4 = () => {
 
         {/* Logo */}
 
-      <img
-  src={scrolled ? LogoDark : Logo}
-  alt="Consultez"
-  className={`transition-all duration-500 ${scrolled ? "" : ""}`}
-/>
+        <img
+          src={scrolled ? LogoDark : Logo}
+          alt="Consultez"
+          className={`transition-all duration-500 ${scrolled ? "" : ""}`}
+        />
 
         {/* Links */}
         <ul
           className={`relative flex items-center justify-center gap-8 transition-colors duration-500
             ${scrolled ? "text-gray-800" : "text-white"}`}
         >
-
-
           {/* Home Page Drop down */}
           <Link className="homepage relative text-[16px] flex items-center justify-center gap-2 transition-colors">
-            Home <span className="text-[12px]"><FaAngleDown /></span>
-              <div
-            className="home-dp absolute w-60  bg-white top-8 z-50 shadow-2xl flex flex-col items-start justify-center gap-5 p-4 opacity-0 invisible translate-y-6
+            Home{" "}
+            <span className="text-[12px]">
+              <FaAngleDown />
+            </span>
+            <div
+              className="home-dp absolute w-60  bg-white top-8 z-50 shadow-2xl flex flex-col items-start justify-center gap-5 p-4 opacity-0 invisible translate-y-6
 transition-all duration-500 rounded-b-2xl text-black"
-          >
-            <Link
-              className="w-full border-b border-gray-300 pb-2 duration-100 hover:translate-x-2 hover:text-[#1A4137]"
-              to="/"
             >
-              Home Page 1
-            </Link>
-            <Link
-              className="w-full border-b border-gray-200 pb-1 duration-100 hover:translate-x-2 hover:text-[#1A4137]"
-              to="/homepage2"
-            >
-              Home Page 2
-            </Link>
-            <Link
-              className="w-full border-b border-gray-200 pb-1 duration-100 hover:translate-x-2 hover:text-[#1A4137]"
-              to="/homepage3"
-            >
-              Home Page 3
-            </Link>
-            <Link
-              className="w-full border-b border-gray-200 pb-1 duration-100 hover:translate-x-2 hover:text-[#1A4137]"
-              to="/homepage4"
-            >
-              Home Page 4
-            </Link>
-            <Link
-              className="w-full border-b border-gray-200 pb-1 duration-100 hover:translate-x-2 hover:text-[#1A4137]"
-              to="/homepage5"
-            >
-              Home Page 5
-            </Link>
-            <Link
-              className="w-full border-b border-gray-200 pb-1 duration-100 hover:translate-x-2 hover:text-[#1A4137]"
-              to="/homepage6"
-            >
-              Home Page 6
-            </Link>
-            <Link
-              className="w-full border-b border-gray-200 pb-1 duration-100 hover:translate-x-2 hover:text-[#1A4137]"
-              to="/homepage7"
-            >
-              Home Page 7
-            </Link>
-            <Link
-              className="w-full border-b border-gray-200 pb-1 duration-100 hover:translate-x-2 hover:text-[#1A4137]"
-              to="/single-style"
-            >
-              Single Style
-            </Link>
-            <Link
-              className="w-full border-b border-gray-200 pb-1 duration-100 hover:translate-x-2 hover:text-[#1A4137]"
-              to="/dark-style"
-            >
-              Dark Style{" "}
-            </Link>
-            <Link
-              className="duration-100 hover:translate-x-2 hover:text-[#1A4137]"
-              to="/RTL-style"
-            >
-              RTL Style
-            </Link>
-          </div>
+              <Link
+                className="w-full border-b border-gray-300 pb-2 duration-100 hover:translate-x-2 hover:text-[#1A4137]"
+                to="/"
+              >
+                Home Page 1
+              </Link>
+              <Link
+                className="w-full border-b border-gray-200 pb-1 duration-100 hover:translate-x-2 hover:text-[#1A4137]"
+                to="/homepage2"
+              >
+                Home Page 2
+              </Link>
+              <Link
+                className="w-full border-b border-gray-200 pb-1 duration-100 hover:translate-x-2 hover:text-[#1A4137]"
+                to="/homepage3"
+              >
+                Home Page 3
+              </Link>
+              <Link
+                className="w-full border-b border-gray-200 pb-1 duration-100 hover:translate-x-2 hover:text-[#1A4137]"
+                to="/homepage4"
+              >
+                Home Page 4
+              </Link>
+              <Link
+                className="w-full border-b border-gray-200 pb-1 duration-100 hover:translate-x-2 hover:text-[#1A4137]"
+                to="/homepage5"
+              >
+                Home Page 5
+              </Link>
+              <Link
+                className="w-full border-b border-gray-200 pb-1 duration-100 hover:translate-x-2 hover:text-[#1A4137]"
+                to="/homepage6"
+              >
+                Home Page 6
+              </Link>
+              <Link
+                className="w-full border-b border-gray-200 pb-1 duration-100 hover:translate-x-2 hover:text-[#1A4137]"
+                to="/homepage7"
+              >
+                Home Page 7
+              </Link>
+              <Link
+                className="w-full border-b border-gray-200 pb-1 duration-100 hover:translate-x-2 hover:text-[#1A4137]"
+                to="/single-style"
+              >
+                Single Style
+              </Link>
+              <Link
+                className="w-full border-b border-gray-200 pb-1 duration-100 hover:translate-x-2 hover:text-[#1A4137]"
+                to="/dark-style"
+              >
+                Dark Style{" "}
+              </Link>
+              <Link
+                className="duration-100 hover:translate-x-2 hover:text-[#1A4137]"
+                to="/RTL-style"
+              >
+                RTL Style
+              </Link>
+            </div>
           </Link>
-
-
-
 
           {/* Page Drop down */}
           <Link className="page relative text-[16px] flex items-center justify-center gap-2  transition-colors">
-            {scrolled ? "Pages" : "Page"} <span className="text-[12px]"><FaAngleDown /></span>
-               <div
-            className="page-dp absolute w-50  bg-white top-8 z-50 shadow-2xl flex flex-col items-start justify-center gap-5 p-4 opacity-0 invisible translate-y-6
+            {scrolled ? "Pages" : "Page"}{" "}
+            <span className="text-[12px]">
+              <FaAngleDown />
+            </span>
+            <div
+              className="page-dp absolute w-50  bg-white top-8 z-50 shadow-2xl flex flex-col items-start justify-center gap-5 p-4 opacity-0 invisible translate-y-6
 transition-all duration-500 rounded-b-2xl text-black"
-          >
-            <Link
-              className="w-full border-b border-gray-300 pb-2 duration-100 hover:translate-x-2 hover:text-[#1A4137]"
-              to="/about"
             >
-              About
-            </Link>
-            <Link
-              className="w-full border-b border-gray-200 pb-1 duration-100 hover:translate-x-2 hover:text-[#1A4137]"
-              to="/faqs"
-            >
-              Faq
-            </Link>
-            <Link
-              className="w-full border-b border-gray-200 pb-1 duration-100 hover:translate-x-2 hover:text-[#1A4137]"
-              to="/pricing"
-            >
-              Pricing
-            </Link>
-            <Link
-              className="w-full border-b border-gray-200 pb-1 duration-100 hover:translate-x-2 hover:text-[#1A4137]"
-              to="/team"
-            >
-              Team
-            </Link>
-            <Link
-              className="w-full border-b border-gray-200 pb-1 duration-100 hover:translate-x-2 hover:text-[#1A4137]"
-              to="/shop"
-            >
-              Shop
-            </Link>
-            <Link
-              className="w-full border-b border-gray-200 pb-1 duration-100 hover:translate-x-2 hover:text-[#1A4137]"
-              to="/testimonial"
-            >
-              Testimonials
-            </Link>
-            <Link
-              className="w-full duration-100 hover:translate-x-2 hover:text-[#1A4137]"
-              to="/error"
-            >
-              404
-            </Link>
-          </div>
+              <Link
+                className="w-full border-b border-gray-300 pb-2 duration-100 hover:translate-x-2 hover:text-[#1A4137]"
+                to="/about"
+              >
+                About
+              </Link>
+              <Link
+                className="w-full border-b border-gray-200 pb-1 duration-100 hover:translate-x-2 hover:text-[#1A4137]"
+                to="/faqs"
+              >
+                Faq
+              </Link>
+              <Link
+                className="w-full border-b border-gray-200 pb-1 duration-100 hover:translate-x-2 hover:text-[#1A4137]"
+                to="/pricing"
+              >
+                Pricing
+              </Link>
+              <Link
+                className="w-full border-b border-gray-200 pb-1 duration-100 hover:translate-x-2 hover:text-[#1A4137]"
+                to="/team"
+              >
+                Team
+              </Link>
+              <Link
+                className="w-full border-b border-gray-200 pb-1 duration-100 hover:translate-x-2 hover:text-[#1A4137]"
+                to="/shop"
+              >
+                Shop
+              </Link>
+              <Link
+                className="w-full border-b border-gray-200 pb-1 duration-100 hover:translate-x-2 hover:text-[#1A4137]"
+                to="/testimonial"
+              >
+                Testimonials
+              </Link>
+              <Link
+                className="w-full duration-100 hover:translate-x-2 hover:text-[#1A4137]"
+                to="/error"
+              >
+                404
+              </Link>
+            </div>
           </Link>
-
-
 
           {/* Service Drop Down */}
           <Link className="service relative text-[16px] flex items-center justify-center gap-2  transition-colors">
-            Services <span className="text-[12px]"><FaAngleDown /></span>
-               <div
-            className="service-dp absolute w-50  bg-white top-8 z-50 shadow-2xl flex flex-col items-start justify-center gap-5 p-4 opacity-0 invisible translate-y-6
+            Services{" "}
+            <span className="text-[12px]">
+              <FaAngleDown />
+            </span>
+            <div
+              className="service-dp absolute w-50  bg-white top-8 z-50 shadow-2xl flex flex-col items-start justify-center gap-5 p-4 opacity-0 invisible translate-y-6
 transition-all duration-500 rounded-b-2xl text-black"
-          >
-            <Link
-              className="w-full border-b border-gray-300 pb-2 duration-100 hover:translate-x-2 hover:text-[#1A4137]"
-              to="/about"
             >
-              Services
-            </Link>
-            <Link
-              className="w-full duration-100 hover:translate-x-2 hover:text-[#1A4137]"
-              to="/faqs"
-            >
-              Services details
-            </Link>
-          </div>
+              <Link
+                className="w-full border-b border-gray-300 pb-2 duration-100 hover:translate-x-2 hover:text-[#1A4137]"
+                to="/about"
+              >
+                Services
+              </Link>
+              <Link
+                className="w-full duration-100 hover:translate-x-2 hover:text-[#1A4137]"
+                to="/faqs"
+              >
+                Services details
+              </Link>
+            </div>
           </Link>
-
-
 
           {/* Portfolio Drop Down */}
-          <Link className="portfolio relative text-[16px] flex items-center justify-center gap-2  transition-colors">
-            Portfolio <span className="text-[12px]"><FaAngleDown /></span>
-             <div
-            className="portfolio-dp absolute w-50  bg-white top-8 z-50 shadow-2xl flex flex-col items-start justify-center gap-5 p-4 opacity-0 invisible translate-y-6
+          <Link className="c text-[16px] flex items-center justify-center gap-2  transition-colors">
+            Portfolio{" "}
+            <span className="text-[12px]">
+              <FaAngleDown />
+            </span>
+            <div
+              className="portfolio-dp absolute w-50  bg-white top-8 z-50 shadow-2xl flex flex-col items-start justify-center gap-5 p-4 opacity-0 invisible translate-y-6
 transition-all duration-500 rounded-b-2xl text-black"
-          >
-            <Link
-              className="w-full border-b border-gray-300 pb-2 duration-100 hover:translate-x-2 hover:text-[#1A4137]"
-              to="/about"
             >
-              Portfolio
-            </Link>
-            <Link
-              className="w-full duration-100 hover:translate-x-2 hover:text-[#1A4137]"
-              to="/faqs"
-            >
-              Portfolio details
-            </Link>
-          </div>
+              <Link
+                className="w-full border-b border-gray-300 pb-2 duration-100 hover:translate-x-2 hover:text-[#1A4137]"
+                to="/about"
+              >
+                Portfolio
+              </Link>
+              <Link
+                className="w-full duration-100 hover:translate-x-2 hover:text-[#1A4137]"
+                to="/faqs"
+              >
+                Portfolio details
+              </Link>
+            </div>
           </Link>
-
 
           {/* News Drop down  */}
           <Link className="news relative text-[16px] flex items-center justify-center gap-2 transition-colors">
-            News <span className="text-[12px]"><FaAngleDown /></span>
-             <div
-            className="news-dp absolute w-50  bg-white top-8 z-50 shadow-2xl flex flex-col items-start justify-center gap-5 p-4 opacity-0 invisible translate-y-6
+            News{" "}
+            <span className="text-[12px]">
+              <FaAngleDown />
+            </span>
+            <div
+              className="news-dp absolute w-50  bg-white top-8 z-50 shadow-2xl flex flex-col items-start justify-center gap-5 p-4 opacity-0 invisible translate-y-6
 transition-all duration-500 rounded-b-2xl text-black"
-          >
-            <Link
-              className="w-full border-b border-gray-300 pb-2 duration-100 hover:translate-x-2 hover:text-[#1A4137]"
-              to="/about"
             >
-              News Grid
-            </Link>
-            <Link
-              className="w-full duration-100 hover:translate-x-2 hover:text-[#1A4137]"
-              to="/faqs"
-            >
-              News details
-            </Link>
-          </div>
+              <Link
+                className="w-full border-b border-gray-300 pb-2 duration-100 hover:translate-x-2 hover:text-[#1A4137]"
+                to="/about"
+              >
+                News Grid
+              </Link>
+              <Link
+                className="w-full duration-100 hover:translate-x-2 hover:text-[#1A4137]"
+                to="/faqs"
+              >
+                News details
+              </Link>
+            </div>
           </Link>
-          <Link className="text-[16px]  transition-colors">
-            Contact
-          </Link>
+          <Link className="text-[16px]  transition-colors">Contact</Link>
         </ul>
 
         {/* Call section - only when NOT scrolled */}
@@ -269,16 +273,16 @@ transition-all duration-500 rounded-b-2xl text-black"
 
         {/* CTA Button */}
         {!scrolled && (
-
           <button
-          className={`flex items-center justify-center gap-2 cursor-pointer transition-all duration-500
-            ${scrolled
-              ? "h-11 px-6 rounded-full bg-[#C6D936] text-gray-900 font-semibold text-sm"
-              : "h-full w-50 bg-[#C6D936]"
-              }`}
-              >
-          Get Quote Now
-        </button>
+            className={`flex items-center justify-center gap-2 cursor-pointer transition-all duration-500
+            ${
+              scrolled
+                ? "h-11 px-6 rounded-full bg-[#C6D936] text-gray-900 font-semibold text-sm"
+                : "h-full w-50 bg-[#C6D936]"
+            }`}
+          >
+            Get Quote Now
+          </button>
         )}
       </section>
     </>
