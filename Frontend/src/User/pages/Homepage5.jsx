@@ -3,6 +3,19 @@ import { FaPlay } from "react-icons/fa";
 import BannerShape from "../../assets/Images/banner-five-shape.png"
 import BannerImg from "../../assets/Images/banner-five-image.jpg"
 import BrandSlider5 from "../components/Homepage 5 Components/BrandSlider5/BrandSlider5";
+import About5 from "../components/Homepage 5 Components/About5/About5";
+import Services from "../components/Homepage 5 Components/Services/Services";
+import MissionVision from "../components/Homepage1 Components/MissionVision/MissionVision"
+import GrowthRate from "../components/Homepage1 Components/GrowthRate/GrowthRate";
+import CaseStudy from "../components/Homepage1 Components/CashStudy/CaseStudy";
+import Processing from "../components/Homepage1 Components/ProcessingSec/Processing";
+import Faqs from "../components/Homepage1 Components/FAQS/Faqs"
+import Consultent from "../components/Homepage 5 Components/Consultant/Consultent";
+import Strategy from "../components/Homepage 5 Components/Strategy/Strategy";
+import Testimonial from "../components/Homepage 5 Components/Testimonial/Testimonial";
+import ContactNow from "../components/Homepage 5 Components/Contact/ContactNow";
+import Blogs from "../components/Homepage2 components/Blogs/Blogs";
+
 
 const Homepage5 = () => {
   const [openVideo, setopenVideo] = useState(false);
@@ -75,6 +88,18 @@ const Homepage5 = () => {
         </div>
       </section>
       <BrandSlider5 />
+      <About5 />
+      <Services />
+      <MissionVision />
+      <GrowthRate />
+      <CaseStudy />
+      <Processing />
+      <Faqs />
+      <Consultent />
+      <Strategy />
+      <Testimonial />
+      <ContactNow />
+      <Blogs />
     </>
   );
 };

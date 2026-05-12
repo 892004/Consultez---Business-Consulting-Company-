@@ -163,6 +163,7 @@ const About1 = () => {
                 </div>
            </div>
         </div>
+        
       </div>
     </section>
   );
