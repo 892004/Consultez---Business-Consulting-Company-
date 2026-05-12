@@ -20,6 +20,8 @@ import Layout4 from "./User/layout/Layout4";
 import Homepage4 from "./User/pages/Homepage4";
 import Layout5 from "./User/layout/Layout5";
 import Homepage5 from "./User/pages/Homepage5";
+import Layout6 from "./User/layout/Layout6";
+import Homepage6 from "./User/pages/Homepage6";
 
 
 function App() {
@@ -45,6 +47,10 @@ function App() {
 
       <Route path = "/homepage5" element={<Layout5 />}> 
         <Route index element={<Homepage5 />} />
+       </Route>
+
+      <Route path = "/homepage6" element={<Layout6 />}> 
+        <Route index element={<Homepage6 />} />
        </Route>
 
 

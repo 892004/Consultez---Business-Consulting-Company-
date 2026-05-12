@@ -207,7 +207,7 @@ transition-all duration-500 rounded-b-2xl text-black"
           </Link>
 
           {/* Portfolio Drop Down */}
-          <Link className="c text-[16px] flex items-center justify-center gap-2  transition-colors">
+          <Link className="portfolio relative text-[16px] flex items-center justify-center gap-2  transition-colors">
             Portfolio{" "}
             <span className="text-[12px]">
               <FaAngleDown />
