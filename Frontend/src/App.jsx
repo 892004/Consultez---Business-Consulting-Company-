@@ -22,6 +22,8 @@ import Layout5 from "./User/layout/Layout5";
 import Homepage5 from "./User/pages/Homepage5";
 import Layout6 from "./User/layout/Layout6";
 import Homepage6 from "./User/pages/Homepage6";
+import Layout7 from "./User/layout/Layout7";
+import Homepage7 from "./User/pages/Homepage7";
 
 
 function App() {
@@ -51,6 +53,10 @@ function App() {
 
       <Route path = "/homepage6" element={<Layout6 />}> 
         <Route index element={<Homepage6 />} />
+       </Route>
+
+      <Route path = "/homepage7" element={<Layout7 />}> 
+        <Route index element={<Homepage7 />} />
        </Route>
 
 

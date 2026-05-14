@@ -2,7 +2,7 @@ import React from "react";
 import Logo from "../../../../assets/Images/logo.png";
 import { Link } from "react-router-dom";
 import { FaAngleDown } from "react-icons/fa6";
-import { IoMdCall } from "react-icons/io";
+  import { IoMdCall } from "react-icons/io";
 import "../header1/header1.css";
 
 const Navbar1 = ({ hideTopbar }) => {
