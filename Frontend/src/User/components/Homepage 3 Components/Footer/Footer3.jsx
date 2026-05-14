@@ -4,22 +4,23 @@ import rightShape from "../../../../assets/Images/cta-line.png";
 import { GoArrowUpRight } from "react-icons/go";
 import "../../../../../src/App.css";
 import Logo from "../../../../assets/Images/logo-light.png";
+import Logo2 from "../../../../assets/Images/logo-2.png"
 import { IoLocationOutline } from "react-icons/io5";
 import { MdOutlineMailOutline } from "react-icons/md";
 import { IoCallOutline } from "react-icons/io5";
 import { FaRegCopyright } from "react-icons/fa";
 
-const Footer3 = () => {
+const Footer3 = ({bgColor = "bg-[#1A4137]" , Color = "text-[#000]" ,Color2="text-[#C6D936]", bgColor2 = "bg-[#C6D936]" , logo=Logo }) => {
   return (
-    <footer className="min-h-screen bg-[#1A4137] p-20 flex flex-col">
-      <div className="container h-80 rounded-2xl flex flex-row items-center w-full bg-[#C6D936] p-20 relative">
+    <footer className={`min-h-screen ${bgColor} p-20 flex flex-col`}>
+      <div className={`container h-80 rounded-2xl flex flex-row items-center w-full ${bgColor2} ${Color} p-20 relative`}>
         <div className="flex flex-col">
-          <h1 className="font-bold text-5xl text-[#051B05] leading-14">
+          <h1 className={`font-bold text-5xl ${Color}leading-14`}>
             Looking For Professional <br />
             Business Consultant ?
           </h1>
 
-          <p className="text-[#051B05] mt-5">
+          <p className={`${Color} mt-5`}>
             At vero eos et accusamus et iusto odio dignissimos ducimus quiy
             blanditiise <br />
             praesentium voluptatum deleniti atque corrupti dolorese
@@ -31,17 +32,17 @@ const Footer3 = () => {
         <div className="absolute right-0 flex flex-col items-center">
           <img src={rightShape} />
 
-          <button className="flex flex-row items-center absolute top-30 px-10 py-3 bg-white rounded-2xl text-lg font-medium cursor-pointer  gap-3">
+          <button className="flex flex-row items-center absolute top-30 px-10 py-3 bg-white text-black rounded-2xl text-lg font-medium cursor-pointer  gap-3">
             Get Started Free <GoArrowUpRight />
           </button>
 
-          <span className="absolute top-44">No Credit card required</span>
+          <span className={`absolute top-44 ${Color}`}>No Credit card required</span>
         </div>
       </div>
 
       <div className="middle flex flex-row items-center justify-center gap-20 p-20 border-b border-white/20">
         <div className="flex flex-col items-start gap-3">
-          <img src={Logo} className="scale-100" />
+          <img src={logo} className="scale-100" />
           <p className="text-gray-400">
             At vero eos et accusamus iusto odio
             <br /> dignissimos ducimus blanditiise
@@ -52,7 +53,7 @@ const Footer3 = () => {
               className="py-4 px-8 w-80 rounded-xl bg-white"
               placeholder="Email Address "
             />
-            <span className="absolute right-2 cursor-pointer  bg-[#C6D936] p-3 rounded-xl">
+            <span className={`absolute right-2 cursor-pointer ${bgColor2} ${Color} p-3 rounded-xl`}>
               <GoArrowUpRight />
             </span>
           </div>
@@ -92,15 +93,15 @@ const Footer3 = () => {
           <h2 className="font-bold text-white text-2xl">Contact</h2>
           <div className="mt-5 flex flex-col text-[16px] gap-5">
             <span className="font-medium text-white flex flex-row items-start gap-2 ">
-              <IoLocationOutline className="text-[#C6D936] text-xl mt-1" />
+              <IoLocationOutline className={`${Color2} text-xl mt-1`} />
               55 Main Street, 2nd Block <br /> Melbourne , Australia
             </span>
             <span className="font-medium text-white flex flex-row items-start gap-2 ">
-              <MdOutlineMailOutline className="text-[#C6D936] text-xl mt-1" />
+              <MdOutlineMailOutline className={`${Color2} text-xl mt-1`} />
               support@gmail.com
             </span>
             <span className="font-medium text-white flex flex-row items-start gap-2 ">
-              <IoCallOutline className="text-[#C6D936] text-xl mt-1" />
+              <IoCallOutline className={`${Color2} text-xl mt-1`} />
               +000 (123) 44 55
             </span>
           </div>

@@ -10,7 +10,19 @@ import { FaLinkedinIn } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa6";
 import TeamBg from '../../../../assets/Images/team-three-text.png'
 
-const TeamMember = () => {
+const TeamMember = ({
+    bgColor = "bg-[#C6D936]",
+    Color = "text-[#000]",
+    heading=(
+      <>
+      The Visionaries Driving <br/>
+      Our Success
+      </>
+    ),
+    button = "Get Started",
+    showButton = true,
+    CenterHeading = false,
+}) => {
   const Team = [
     {
       id: 1,
@@ -41,23 +53,30 @@ const TeamMember = () => {
     <section className="TeamMember  min-h-screen w-full relative p-20 flex flex-col relative bg-[#F0F7F3]">
        <img src={TeamBg} className="absolute bottom-0 left-0" />
       {/* Heading */}
-      <div className="heading flex flex-row items-center gap-150 z-30">
-        <div className="left-head flex flex-col">
-          <span className="w-40 py-2 flex items-center justify-center bg-[#C6D936] tracking-widest rounded-full font-semibold text-sm">
+      <div className={`heading w-full z-30 ${
+        CenterHeading?"flex flex-col items-center justify-center text-center":"flex flex-row items-center justify-between"
+      }`}>
+
+       <div
+  className={`left-head flex flex-col ${
+    CenterHeading ? "items-center text-center" : ""
+  }`}
+>
+          <span className={`w-40 py-2 flex items-center justify-center ${bgColor}  ${Color} tracking-widest rounded-full font-semibold text-sm`}>
             TEAM MEMBER
           </span>
           <h1 className="text-5xl font-bold mt-5 leading-14">
-            The Visionaries Driving
-            <br />
-            Our Success.
+            {heading}
           </h1>
         </div>
 
-        <div className="right-head flex flex-col mt-5">
-          <button className="py-4 px-10 text-[#1A4137] bg-[#C6D936] rounded-full flex items-center gap-2 cursor-pointer">
-            Get Started <FaAngleRight />
-          </button>
-        </div>
+       {showButton && (
+  <div className="right-head flex flex-col mt-5">
+    <button className="py-4 px-10 text-[#1A4137] bg-[#C6D936] rounded-full flex items-center gap-2 cursor-pointer">
+      {button} <FaAngleRight />
+    </button>
+  </div>
+)}
       </div>
 
       {/* team members */}

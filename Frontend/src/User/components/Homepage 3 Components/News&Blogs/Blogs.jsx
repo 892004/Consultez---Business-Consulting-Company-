@@ -6,7 +6,7 @@ import { TbUserCircle } from "react-icons/tb";
 import { BiMessageRoundedDetail } from "react-icons/bi";
 
 
-const Blogs = () => {
+const Blogs = ({Color = "text-[#000]" , bgColor2 = "bg-[#C6D936]"}) => {
   const Blog = [
     {
       id: 1,
@@ -35,7 +35,7 @@ const Blogs = () => {
   ];
   return (
     <section className="Blogs min-h-screen flex flex-col items-center p-10">
-      <span className="w-40 py-2 flex items-center justify-center bg-[#C6D936] tracking-widest rounded-full font-semibold text-sm">
+      <span className={`w-40 py-2 flex items-center justify-center ${bgColor2} ${Color} tracking-widest rounded-full font-semibold text-sm`}>
         NEWS & BLOGS
       </span>
 

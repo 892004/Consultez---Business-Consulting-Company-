@@ -10,7 +10,12 @@ import Aboutus6 from "../components/Homepage6 Components/AboutUs6/Aboutus6";
 import Services from "../components/Homepage 3 Components/Services3/Services";
 import Service from "../components/Homepage6 Components/Services/Service";
 import Consulting from "../components/Homepage 3 Components/consulting/Consulting";
-
+import Expertize from "../components/Homepage6 Components/Expertise/Expertize";
+import Consultant from "../components/Homepage6 Components/Consultant/Consultant";
+import PriceTable from "../components/Homepage6 Components/PriceTable/PriceTable";
+import TeamMember from "../components/Homepage 3 Components/TeamMember/TeamMember";
+import Testimonial from "../components/Homepage 3 Components/Testimonial/Testimonial";
+import Blogs from "../components/Homepage 3 Components/News&Blogs/Blogs"
 const Homepage6 = () => {
   const [openVideo, setopenVideo] = useState(false);
   return (
@@ -121,6 +126,31 @@ const Homepage6 = () => {
         gradientVia="via-[#063232]/90"
         gradientTo="to-[#063232]/90"
       />
+      <Expertize />
+      <Consultant />
+      <PriceTable />
+     <TeamMember
+  bgColor="bg-[#E24B1B]"
+  Color="text-[#fff]"
+  heading={
+    <>
+      Meet Our Expert Team 
+       <br />
+      Member
+    </>
+  }
+  showButton={false}
+  CenterHeading={true}
+/>
+<Testimonial 
+bgColor="bg-[#063232]"
+bgColor2="bg-[#E24B1B]"
+ Color="text-[#fff]"
+/>
+<Blogs 
+bgColor2="bg-[#E24B1B]"
+ Color="text-[#fff]"
+ />
     </>
   );
 };
