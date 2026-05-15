@@ -6,8 +6,19 @@ import User1 from "../../assets/Images/banner-user1.png"
 import User2 from "../../assets/Images/banner-user2.png"
 import User3 from "../../assets/Images/banner-user3.png"
 import Recept from "../../assets/Images/recept.jpg"
+import About7 from "../components/Homepage 7 components/Aboutus7/About7";
+import Service from "../components/Homepage 7 components/Services/Service";
+import WhyChooseUs from "../components/Homepage 7 components/WhyChooseUs/WhyChooseUs";
+import Brand from "../components/Homepage 3 Components/Branding Swiper/Brand";
+import CaseStudy from "../components/Homepage1 Components/CashStudy/CaseStudy";
+import Faqs from "../components/Homepage2 components/Faqs2/Faqs2"
+import HowItWorks from "../components/Homepage 7 components/HowItWorks/HowItWorks";
+import TeamMember from "../components/Homepage 7 components/TeamMember/TeamMember";
+import Testimonial from "../components/Homepage 7 components/Testimonials/Testimonial";
+import Blog from "../components/Homepage1 Components/Blogs/Blog";
 const Homepage7 = () => {
   return (
+    <>
     <section className="Homepage7 min-h-screen">
       {/* HERO CONTAINER */}
       <div className="relative rounded-[40px] min-h-screen ">
@@ -83,6 +94,19 @@ const Homepage7 = () => {
         <img src={Recept} className="absolute right-10 top-40 rounded-3xl" />
       </div>
     </section>
+    <About7 />
+    <Service />
+    <div className="">
+    <WhyChooseUs />
+    <Brand />
+    </div>
+    <CaseStudy />
+    <Faqs />
+    <HowItWorks />
+    <TeamMember />
+    <Testimonial />
+    <Blog />
+    </>
   );
 };
 

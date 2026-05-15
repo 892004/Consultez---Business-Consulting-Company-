@@ -68,7 +68,7 @@ const CaseStudy = () => {
   slidesPerView={4}
   spaceBetween={2}
   loop={true}
-  speed={2000}   // smooth continuous feel
+  speed={5000}   // smooth continuous feel
   autoplay={{
     delay: 0,   // 🔥 IMPORTANT (continuous banane ke liye)
     disableOnInteraction: false,
