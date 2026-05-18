@@ -24,41 +24,59 @@ import Layout6 from "./User/layout/Layout6";
 import Homepage6 from "./User/pages/Homepage6";
 import Layout7 from "./User/layout/Layout7";
 import Homepage7 from "./User/pages/Homepage7";
+import Aboutus from "./User/pages/Aboutus";
+import Faqs from "./User/pages/Faqs";
+import Pricing from "./User/pages/Pricing";
+import TeamList from "./User/pages/TeamList";
+import TeamDetails from "./User/pages/TeamDetails";
+import Testimonial2 from "./User/pages/Testimonial";
+import Notfound from "./User/pages/Notfound";
+
 
 
 function App() {
   return (
     <Routes>
-        {/* User Side Rounting */}
-       <Route path ="/" element={<Layout1 />} >
-           <Route index element={<Homepage1 />} />
-       </Route>
+      {/* User Side Rounting */}
+      <Route path="/" element={<Layout1 />}>
+        <Route index element={<Homepage1 />} />
+        <Route path="/about-us" element={<Aboutus />} />
+        <Route path="/faqs" element={<Faqs />} />
+        <Route path="/pricing" element={<Pricing />} />
+        <Route path = "/teamlist" element={<TeamList />} />
+        <Route path = "/team-details" element={<TeamDetails />} />
+        <Route path = "/testimonial" element={<Testimonial2 />} />
+      </Route>
 
-       <Route path = "/homepage2" element={<Layout2 />}> 
+      <Route path = '/error' element={<Notfound />} />
+
+
+
+      <Route path="/homepage2" element={<Layout2 />}>
         <Route index element={<Homepage2 />} />
-       </Route>
+      </Route>
 
-
-      <Route path = "/homepage3" element={<Layout3 />}> 
+      <Route path="/homepage3" element={<Layout3 />}>
         <Route index element={<Homepage3 />} />
-       </Route>
+      </Route>
 
-      <Route path = "/homepage4" element={<Layout4 />}> 
+      <Route path="/homepage4" element={<Layout4 />}>
         <Route index element={<Homepage4 />} />
-       </Route>
+      </Route>
 
-      <Route path = "/homepage5" element={<Layout5 />}> 
+      <Route path="/homepage5" element={<Layout5 />}>
         <Route index element={<Homepage5 />} />
-       </Route>
+      </Route>
 
-      <Route path = "/homepage6" element={<Layout6 />}> 
+      <Route path="/homepage6" element={<Layout6 />}>
         <Route index element={<Homepage6 />} />
-       </Route>
+      </Route>
 
-      <Route path = "/homepage7" element={<Layout7 />}> 
+      <Route path="/homepage7" element={<Layout7 />}>
         <Route index element={<Homepage7 />} />
-       </Route>
+      </Route>
 
+      {/* Pages */}
 
       {/* Admin Side Routing */}
       {/* Login */}
@@ -79,7 +97,7 @@ function App() {
         <Route path="users" element={<User />} />
         <Route path="categories" element={<Category />} />
         <Route path="services" element={<Service />} />
-        <Route path="blogs" element={<Blogs/>} />
+        <Route path="blogs" element={<Blogs />} />
         <Route path="team-members" element={<TeamMember />} />
         <Route path="testimonials" element={<Testimonials />} />
         <Route path="inquiries" element={<Inquiries />} />

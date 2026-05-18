@@ -32,7 +32,7 @@ const Testimonials = () => {
   ]
 
   return (
-    <section className="Testimonials relative min-h-[120vh] w-full bg-[#1A4137] -translate-y-70 overflow-hidden rounded-[40%_40%_0_0_/_50px_50px_0_0] flex flex-row items-center justify-center">
+  <section className="Testimonials relative py-30 w-full bg-[#1A4137] overflow-hidden rounded-[40%_40%_0_0_/_50px_50px_0_0] flex flex-row items-center justify-center">
       {/* LEFT SIDE - untouched */}
       <div className="left w-[40%] p-10 relative">
         <img src={TestProfile} />
