@@ -31,6 +31,10 @@ import TeamList from "./User/pages/TeamList";
 import TeamDetails from "./User/pages/TeamDetails";
 import Testimonial2 from "./User/pages/Testimonial";
 import Notfound from "./User/pages/Notfound";
+import ServicePage from "./User/pages/ServicePage";
+import ServiceDetails from "./User/pages/ServiceDetails";
+import Portfolio from "./User/pages/Portfolio";
+import PortfolioDetails from "./User/pages/PortfolioDetails";
 
 
 
@@ -46,6 +50,10 @@ function App() {
         <Route path = "/teamlist" element={<TeamList />} />
         <Route path = "/team-details" element={<TeamDetails />} />
         <Route path = "/testimonial" element={<Testimonial2 />} />
+        <Route path = "/service" element={<ServicePage />} />
+        <Route path = '/service-details' element={<ServiceDetails />} />
+        <Route path = '/portfolio' element={<Portfolio />} />
+        <Route path = '/portfolio-details' element={<PortfolioDetails /> } />
       </Route>
 
       <Route path = '/error' element={<Notfound />} />

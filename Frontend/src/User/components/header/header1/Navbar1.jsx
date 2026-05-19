@@ -238,13 +238,13 @@ transition-all duration-500 rounded-b-2xl"
             >
               <Link
                 className="w-full border-b border-gray-300 pb-2 duration-100 hover:translate-x-2 hover:text-[#1A4137]"
-                to="/about"
+                to="/service"
               >
                 Services
               </Link>
               <Link
                 className="w-full duration-100 hover:translate-x-2 hover:text-[#1A4137]"
-                to="/faqs"
+                to="/service-details"
               >
                 Services details
               </Link>
@@ -260,13 +260,13 @@ transition-all duration-500 rounded-b-2xl"
             >
               <Link
                 className="w-full border-b border-gray-300 pb-2 duration-100 hover:translate-x-2 hover:text-[#1A4137]"
-                to="/about"
+                to="/portfolio"
               >
                 Portfolio
               </Link>
               <Link
                 className="w-full duration-100 hover:translate-x-2 hover:text-[#1A4137]"
-                to="/faqs"
+                to="/portfolio-details"
               >
                 Portfolio details
               </Link>
