@@ -52,11 +52,11 @@ const CaseStudy = () => {
 
   return (  
     <section className="Case-study min-h-screen w-full  p-10 flex flex-col items-center justify-start">
-      <button className="w-fit px-6 py-2 rounded-full tracking-widest font-semibold text-sm bg-[#C6D936] ">
+      <button  data-aos= "fade-up" className="w-fit px-6 py-2 rounded-full tracking-widest font-semibold text-sm bg-[#C6D936] ">
         CASE STUDY
       </button>
 
-      <h3 className="text-center text-5xl font-semibold leading-14 mt-10">
+      <h3  data-aos= "fade-up" className="text-center text-5xl font-semibold leading-14 mt-10">
         Showcasing Project & Solutions
         <br />
         for Clients case study.
@@ -78,7 +78,7 @@ const CaseStudy = () => {
           {caseCards.map((elem, idx) => {
             return (
               <SwiperSlide key={idx}>
-                <div className="relative flex items-start justify-center group">
+                <div  data-aos= "zoom-in" className="relative flex items-start justify-center group">
                   <img
                     src={elem.backGroudImg}
                     className="w-full object-cover transition-all duration-300 group-hover:grayscale"

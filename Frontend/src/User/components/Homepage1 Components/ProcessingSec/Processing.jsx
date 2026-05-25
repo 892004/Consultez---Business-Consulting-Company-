@@ -26,11 +26,11 @@ const Processing = () => {
     ]
   return (
     <section className="Processing min-h-screen w-full mt-10 flex flex-col items-center justify-start p-10 bg-[#F1F1F2] relative">
-      <button className="w-fit px-6 py-2 rounded-full tracking-widest font-semibold text-sm bg-[#C6D936]">
+      <button data-aos= "fade-up" className="w-fit px-6 py-2 rounded-full tracking-widest font-semibold text-sm bg-[#C6D936]">
         HOW IT WORKS
       </button>
 
-      <h1 className="text-center text-5xl font-semibold leading-14 py-4">
+      <h1  data-aos= "fade-up" className="text-center text-5xl font-semibold leading-14 py-4">
         Connect, Collaborate, & Create
         <br />
         Limitless Opportunities.
@@ -42,6 +42,7 @@ const Processing = () => {
         {cards.map(( elem  , idx)=>{
           return(
              <div
+              data-aos= "zoom-out"
       key={idx}
       className={`content flex flex-col gap-2 ml-10 relative ${
         idx !== cards.length - 1 ? "after-line" : ""

@@ -12,7 +12,7 @@ const Layout1 = () => {
         <main className='flex-1'>
             <Outlet />
         </main>
-  {/* <Footer1 /> */}
+  <Footer1 />
     </div>
   )
 }

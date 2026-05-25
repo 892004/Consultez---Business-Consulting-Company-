@@ -152,6 +152,7 @@ transition-all duration-500 rounded-b-2xl"
                   </Link>
                 </div>
               </div>
+
               <div className="relative group w-full border-b border-gray-200 pb-2">
                 {/* MAIN MENU */}
                 <Link
@@ -185,14 +186,14 @@ transition-all duration-500 rounded-b-2xl"
                   </Link>
 
                   <Link
-                    to="/products-sidebar"
+                    to="/product-sidebar"
                     className="px-6 py-4 border-b border-gray-200 hover:text-[#1A4137]"
                   >
                     Products With Sidebar
                   </Link>
 
                   <Link
-                    to="/product-details"
+                    to="/product/1"
                     className="px-6 py-4 border-b border-gray-200 hover:text-[#1A4137]"
                   >
                     Product Details
@@ -213,6 +214,7 @@ transition-all duration-500 rounded-b-2xl"
                   </Link>
                 </div>
               </div>
+              
               <Link
                 className="w-full border-b border-gray-200 pb-1 duration-100 hover:translate-x-2 hover:text-[#1A4137]"
                 to="/testimonial"
@@ -282,20 +284,22 @@ transition-all duration-500 rounded-b-2xl"
             >
               <Link
                 className="w-full border-b border-gray-300 pb-2 duration-100 hover:translate-x-2 hover:text-[#1A4137]"
-                to="/about"
+                to="/news-grid"
               >
                 News Grid
               </Link>
               <Link
                 className="w-full duration-100 hover:translate-x-2 hover:text-[#1A4137]"
-                to="/faqs"
+                to="/news-details"
               >
                 News details
               </Link>
             </div>
           </Link>
 
-          <Link className="text-[16px]">Contact</Link>
+          <Link to="/contact-us" className="text-[16px]">
+            Contact
+          </Link>
         </ul>
 
         {/* PHONE + BUTTON (only when NOT scrolled) */}

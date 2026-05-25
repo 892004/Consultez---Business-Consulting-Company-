@@ -35,53 +35,182 @@ import ServicePage from "./User/pages/ServicePage";
 import ServiceDetails from "./User/pages/ServiceDetails";
 import Portfolio from "./User/pages/Portfolio";
 import PortfolioDetails from "./User/pages/PortfolioDetails";
-
-
+import NewsGrid from "./User/pages/NewsGrid";
+import NewsDetails from "./User/pages/NewsDetails";
+import Contactus from "./User/pages/Contactus";
+import Product from "./User/pages/Product";
+import ProductDetails from "./User/pages/ProductDetails";
+import Cart from "./User/pages/Cart";
+import CheckOut from "./User/pages/CheckOut";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import ProductSidebar from "./User/pages/ProductSidebar";
 
 function App() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
   return (
     <Routes>
       {/* User Side Rounting */}
       <Route path="/" element={<Layout1 />}>
         <Route index element={<Homepage1 />} />
-        <Route path="/about-us" element={<Aboutus />} />
-        <Route path="/faqs" element={<Faqs />} />
-        <Route path="/pricing" element={<Pricing />} />
-        <Route path = "/teamlist" element={<TeamList />} />
-        <Route path = "/team-details" element={<TeamDetails />} />
-        <Route path = "/testimonial" element={<Testimonial2 />} />
-        <Route path = "/service" element={<ServicePage />} />
-        <Route path = '/service-details' element={<ServiceDetails />} />
-        <Route path = '/portfolio' element={<Portfolio />} />
-        <Route path = '/portfolio-details' element={<PortfolioDetails /> } />
+        <Route path="about-us" element={<Aboutus />} />
+        <Route path="faqs" element={<Faqs />} />
+        <Route path="pricing" element={<Pricing />} />
+        <Route path="teamlist" element={<TeamList />} />
+        <Route path="team-details" element={<TeamDetails />} />
+        <Route path="testimonial" element={<Testimonial2 />} />
+        <Route path="service" element={<ServicePage />} />
+        <Route path="service-details" element={<ServiceDetails />} />
+        <Route path="portfolio" element={<Portfolio />} />
+        <Route path="portfolio-details" element={<PortfolioDetails />} />
+        <Route path="news-grid" element={<NewsGrid />} />
+        <Route path="news-details" element={<NewsDetails />} />
+        <Route path="contact-us" element={<Contactus />} />
+        <Route path="products" element={<Product sidebar={false} />} />
+        <Route path="product/:id" element={<ProductDetails />} />
+        <Route path="product-sidebar" element={<ProductSidebar />} />
+        <Route path="cart" element={<Cart />} />
+        <Route path="checkout" element={<CheckOut />} />
       </Route>
 
-      <Route path = '/error' element={<Notfound />} />
-
-
+      <Route path="/error" element={<Notfound />} />
 
       <Route path="/homepage2" element={<Layout2 />}>
         <Route index element={<Homepage2 />} />
+        <Route path="about-us" element={<Aboutus />} />
+        <Route path="faqs" element={<Faqs />} />
+        <Route path="pricing" element={<Pricing />} />
+        <Route path="teamlist" element={<TeamList />} />
+        <Route path="team-details" element={<TeamDetails />} />
+        <Route path="testimonial" element={<Testimonial2 />} />
+        <Route path="service" element={<ServicePage />} />
+        <Route path="service-details" element={<ServiceDetails />} />
+        <Route path="portfolio" element={<Portfolio />} />
+        <Route path="portfolio-details" element={<PortfolioDetails />} />
+        <Route path="news-grid" element={<NewsGrid />} />
+        <Route path="news-details" element={<NewsDetails />} />
+        <Route path="contact-us" element={<Contactus />} />
+        <Route path="products" element={<Product sidebar={false} />} />
+        <Route path="product/:id" element={<ProductDetails />} />
+        <Route path="product-sidebar" element={<ProductSidebar />} />
+        <Route path="cart" element={<Cart />} />
+        <Route path="checkout" element={<CheckOut />} />
       </Route>
 
       <Route path="/homepage3" element={<Layout3 />}>
         <Route index element={<Homepage3 />} />
+        <Route path="about-us" element={<Aboutus />} />
+        <Route path="faqs" element={<Faqs />} />
+        <Route path="pricing" element={<Pricing />} />
+        <Route path="teamlist" element={<TeamList />} />
+        <Route path="team-details" element={<TeamDetails />} />
+        <Route path="testimonial" element={<Testimonial2 />} />
+        <Route path="service" element={<ServicePage />} />
+        <Route path="service-details" element={<ServiceDetails />} />
+        <Route path="portfolio" element={<Portfolio />} />
+        <Route path="portfolio-details" element={<PortfolioDetails />} />
+        <Route path="news-grid" element={<NewsGrid />} />
+        <Route path="news-details" element={<NewsDetails />} />
+        <Route path="contact-us" element={<Contactus />} />
+        <Route path="products" element={<Product sidebar={false} />} />
+        <Route path="product/:id" element={<ProductDetails />} />
+        <Route path="product-sidebar" element={<ProductSidebar />} />
+        <Route path="cart" element={<Cart />} />
+        <Route path="checkout" element={<CheckOut />} />
       </Route>
 
       <Route path="/homepage4" element={<Layout4 />}>
         <Route index element={<Homepage4 />} />
+        <Route path="about-us" element={<Aboutus />} />
+        <Route path="faqs" element={<Faqs />} />
+        <Route path="pricing" element={<Pricing />} />
+        <Route path="teamlist" element={<TeamList />} />
+        <Route path="team-details" element={<TeamDetails />} />
+        <Route path="testimonial" element={<Testimonial2 />} />
+        <Route path="service" element={<ServicePage />} />
+        <Route path="service-details" element={<ServiceDetails />} />
+        <Route path="portfolio" element={<Portfolio />} />
+        <Route path="portfolio-details" element={<PortfolioDetails />} />
+        <Route path="news-grid" element={<NewsGrid />} />
+        <Route path="news-details" element={<NewsDetails />} />
+        <Route path="contact-us" element={<Contactus />} />
+        <Route path="products" element={<Product sidebar={false} />} />
+        <Route path="product/:id" element={<ProductDetails />} />
+        <Route path="product-sidebar" element={<ProductSidebar />} />
+        <Route path="cart" element={<Cart />} />
+        <Route path="checkout" element={<CheckOut />} />
       </Route>
 
       <Route path="/homepage5" element={<Layout5 />}>
         <Route index element={<Homepage5 />} />
+        <Route path="about-us" element={<Aboutus />} />
+        <Route path="faqs" element={<Faqs />} />
+        <Route path="pricing" element={<Pricing />} />
+        <Route path="teamlist" element={<TeamList />} />
+        <Route path="team-details" element={<TeamDetails />} />
+        <Route path="testimonial" element={<Testimonial2 />} />
+        <Route path="service" element={<ServicePage />} />
+        <Route path="service-details" element={<ServiceDetails />} />
+        <Route path="portfolio" element={<Portfolio />} />
+        <Route path="portfolio-details" element={<PortfolioDetails />} />
+        <Route path="news-grid" element={<NewsGrid />} />
+        <Route path="news-details" element={<NewsDetails />} />
+        <Route path="contact-us" element={<Contactus />} />
+        <Route path="products" element={<Product sidebar={false} />} />
+        <Route path="product/:id" element={<ProductDetails />} />
+        <Route path="product-sidebar" element={<ProductSidebar />} />
+        <Route path="cart" element={<Cart />} />
+        <Route path="checkout" element={<CheckOut />} />
       </Route>
 
       <Route path="/homepage6" element={<Layout6 />}>
         <Route index element={<Homepage6 />} />
+        <Route path="about-us" element={<Aboutus />} />
+        <Route path="faqs" element={<Faqs />} />
+        <Route path="pricing" element={<Pricing />} />
+        <Route path="teamlist" element={<TeamList />} />
+        <Route path="team-details" element={<TeamDetails />} />
+        <Route path="testimonial" element={<Testimonial2 />} />
+        <Route path="service" element={<ServicePage />} />
+        <Route path="service-details" element={<ServiceDetails />} />
+        <Route path="portfolio" element={<Portfolio />} />
+        <Route path="portfolio-details" element={<PortfolioDetails />} />
+        <Route path="news-grid" element={<NewsGrid />} />
+        <Route path="news-details" element={<NewsDetails />} />
+        <Route path="contact-us" element={<Contactus />} />
+        <Route path="products" element={<Product sidebar={false} />} />
+        <Route path="product/:id" element={<ProductDetails />} />
+        <Route path="product-sidebar" element={<ProductSidebar />} />
+        <Route path="cart" element={<Cart />} />
+        <Route path="checkout" element={<CheckOut />} />
       </Route>
 
       <Route path="/homepage7" element={<Layout7 />}>
         <Route index element={<Homepage7 />} />
+        <Route path="about-us" element={<Aboutus />} />
+        <Route path="faqs" element={<Faqs />} />
+        <Route path="pricing" element={<Pricing />} />
+        <Route path="teamlist" element={<TeamList />} />
+        <Route path="team-details" element={<TeamDetails />} />
+        <Route path="testimonial" element={<Testimonial2 />} />
+        <Route path="service" element={<ServicePage />} />
+        <Route path="service-details" element={<ServiceDetails />} />
+        <Route path="portfolio" element={<Portfolio />} />
+        <Route path="portfolio-details" element={<PortfolioDetails />} />
+        <Route path="news-grid" element={<NewsGrid />} />
+        <Route path="news-details" element={<NewsDetails />} />
+        <Route path="contact-us" element={<Contactus />} />
+        <Route path="products" element={<Product sidebar={false} />} />
+        <Route path="product/:id" element={<ProductDetails />} />
+        <Route path="product-sidebar" element={<ProductSidebar />} />
+        <Route path="cart" element={<Cart />} />
+        <Route path="checkout" element={<CheckOut />} />
       </Route>
 
       {/* Pages */}

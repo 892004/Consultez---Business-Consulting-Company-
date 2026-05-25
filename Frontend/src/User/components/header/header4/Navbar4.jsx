@@ -3,7 +3,7 @@ import { AiOutlineMenu } from "react-icons/ai";
 import Logo from "../../../../assets/Images/logo-light.png";
 import LogoDark from "../../../../assets/Images/logo.png"; // add dark logo if you have it
 import { Link } from "react-router-dom";
-import { FaAngleDown } from "react-icons/fa6";
+import { FaAngleDown, FaAngleRight } from "react-icons/fa6";
 import { IoMdCall } from "react-icons/io";
 import "../header4/navbar.css";
 
@@ -138,7 +138,7 @@ transition-all duration-500 rounded-b-2xl text-black"
             >
               <Link
                 className="w-full border-b border-gray-300 pb-2 duration-100 hover:translate-x-2 hover:text-[#1A4137]"
-                to="/about"
+                to="/about-us"
               >
                 About
               </Link>
@@ -154,18 +154,110 @@ transition-all duration-500 rounded-b-2xl text-black"
               >
                 Pricing
               </Link>
-              <Link
-                className="w-full border-b border-gray-200 pb-1 duration-100 hover:translate-x-2 hover:text-[#1A4137]"
-                to="/team"
-              >
-                Team
-              </Link>
-              <Link
-                className="w-full border-b border-gray-200 pb-1 duration-100 hover:translate-x-2 hover:text-[#1A4137]"
-                to="/shop"
-              >
-                Shop
-              </Link>
+
+              <div className="relative group w-full border-b border-gray-200 pb-2">
+                {/* MAIN MENU */}
+                <Link
+                  className="flex items-center justify-between duration-100 hover:translate-x-2 hover:text-[#1A4137]"
+                  to="/team"
+                >
+                  Team
+                  <FaAngleRight />
+                </Link>
+
+                {/* SUB MENU */}
+                <div
+                  className="
+                   absolute left-full top-0
+                   w-60 bg-white shadow-2xl
+                   opacity-0 invisible
+                   translate-x-5
+                   group-hover:opacity-100
+                   group-hover:visible
+                   group-hover:translate-x-0
+                   transition-all duration-300
+                   flex flex-col
+                   z-50 mx-4
+                 "
+                >
+                  <Link
+                    to="/teamlist"
+                    className="px-6 py-4 border-b border-gray-200 hover:text-[#1A4137]"
+                  >
+                    Team List
+                  </Link>
+
+                  <Link
+                    to="/team-details"
+                    className="px-6 py-4 hover:text-[#1A4137]"
+                  >
+                    Team Details
+                  </Link>
+                </div>
+              </div>
+
+              <div className="relative group w-full border-b border-gray-200 pb-2">
+                {/* MAIN MENU */}
+                <Link
+                  className="flex items-center justify-between duration-100 hover:translate-x-2 hover:text-[#1A4137]"
+                  to="/shop"
+                >
+                  Shop
+                  <FaAngleRight />
+                </Link>
+
+                {/* SUB MENU */}
+                <div
+                  className="
+                   absolute left-full top-0
+                   w-60 bg-white shadow-2xl
+                   opacity-0 invisible
+                   translate-x-5
+                   group-hover:opacity-100
+                   group-hover:visible
+                   group-hover:translate-x-0
+                   transition-all duration-300
+                   flex flex-col
+                   z-50 mx-4
+                 "
+                >
+                  <Link
+                    to="/products"
+                    className="px-6 py-4 border-b border-gray-200 hover:text-[#1A4137]"
+                  >
+                    Products
+                  </Link>
+
+                  <Link
+                    to="/product-sidebar"
+                    className="px-6 py-4 border-b border-gray-200 hover:text-[#1A4137]"
+                  >
+                    Products With Sidebar
+                  </Link>
+
+                  <Link
+                    to="/product/1"
+                    className="px-6 py-4 border-b border-gray-200 hover:text-[#1A4137]"
+                  >
+                    Product Details
+                  </Link>
+
+                  <Link
+                    to="/cart"
+                    className="px-6 py-4 border-b border-gray-200 hover:text-[#1A4137]"
+                  >
+                    Cart
+                  </Link>
+
+                  <Link
+                    to="/checkout"
+                    className="px-6 py-4 hover:text-[#1A4137]"
+                  >
+                    Checkout
+                  </Link>
+                </div>
+              </div>
+
               <Link
                 className="w-full border-b border-gray-200 pb-1 duration-100 hover:translate-x-2 hover:text-[#1A4137]"
                 to="/testimonial"
@@ -193,13 +285,13 @@ transition-all duration-500 rounded-b-2xl text-black"
             >
               <Link
                 className="w-full border-b border-gray-300 pb-2 duration-100 hover:translate-x-2 hover:text-[#1A4137]"
-                to="/about"
+                to="/service"
               >
                 Services
               </Link>
               <Link
                 className="w-full duration-100 hover:translate-x-2 hover:text-[#1A4137]"
-                to="/faqs"
+                to="/service-details"
               >
                 Services details
               </Link>
@@ -218,13 +310,13 @@ transition-all duration-500 rounded-b-2xl text-black"
             >
               <Link
                 className="w-full border-b border-gray-300 pb-2 duration-100 hover:translate-x-2 hover:text-[#1A4137]"
-                to="/about"
+                to="/portfolio"
               >
                 Portfolio
               </Link>
               <Link
                 className="w-full duration-100 hover:translate-x-2 hover:text-[#1A4137]"
-                to="/faqs"
+                to="/portfolio-details"
               >
                 Portfolio details
               </Link>
@@ -243,19 +335,21 @@ transition-all duration-500 rounded-b-2xl text-black"
             >
               <Link
                 className="w-full border-b border-gray-300 pb-2 duration-100 hover:translate-x-2 hover:text-[#1A4137]"
-                to="/about"
+                to="/news-grid"
               >
                 News Grid
               </Link>
               <Link
                 className="w-full duration-100 hover:translate-x-2 hover:text-[#1A4137]"
-                to="/faqs"
+                to="/news-details"
               >
                 News details
               </Link>
             </div>
           </Link>
-          <Link className="text-[16px]  transition-colors">Contact</Link>
+          <Link to="/contact-us" className="text-[16px]">
+            Contact
+          </Link>
         </ul>
 
         {/* Call section - only when NOT scrolled */}

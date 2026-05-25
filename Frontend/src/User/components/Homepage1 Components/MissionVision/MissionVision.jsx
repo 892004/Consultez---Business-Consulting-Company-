@@ -35,11 +35,11 @@ useLayoutEffect(() => {
       
       {/* LEFT */}
       <div className="left w-[60%] p-20 flex flex-col gap-6">
-        <button className="w-fit px-6 py-2 rounded-full tracking-widest font-bold bg-[#C6D936]">
+        <button data-aos= "fade-right" className="w-fit px-6 py-2 rounded-full tracking-widest font-bold bg-[#C6D936]">
           MISSION VISION
         </button>
 
-        <h1 className="text-5xl font-bold leading-14">
+        <h1 data-aos= "fade-right" className="text-5xl font-bold leading-14">
           We Handle Complexities,
           <br />
           So You Can Drive Growth

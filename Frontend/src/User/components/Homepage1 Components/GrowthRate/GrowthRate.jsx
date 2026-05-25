@@ -28,6 +28,7 @@ const GrowthRate = () => {
 
   return (
     <section
+
       ref={sectionRef}
       className="Growth-Rate mt-6 relative flex flex-col h-screen w-full items-start justify-center"
     >
@@ -45,17 +46,17 @@ const GrowthRate = () => {
 
       {/* CONTENT */}
       <div className="content absolute p-20 w-full z-10">
-        <button className="w-fit px-6 py-1 rounded-full tracking-widest font-semibold text-sm bg-[#C6D936]">
+        <button data-aos= "fade-right" className="w-fit px-6 py-1 rounded-full tracking-widest font-semibold text-sm bg-[#C6D936]">
           GROWTH RATE
         </button>
 
         <div className="flex items-center justify-between border-b border-white/20 pb-6">
-          <h1 className="text-5xl text-white font-bold leading-14 py-3">
+          <h1 data-aos= "fade-right" className="text-5xl text-white font-bold leading-14 py-3">
             Building Connections For Grow <br />
             Limitless Opportunities.
           </h1>
 
-          <button className="mt-6 px-6 py-3 bg-white text-black cursor-pointer">
+          <button data-aos= "fade-left" className="mt-6 px-6 py-3 bg-white text-black cursor-pointer">
             Discover More
           </button>
         </div>
@@ -65,7 +66,7 @@ const GrowthRate = () => {
 
           {/* CARD 1 */}
           <div className="flex items-center gap-5">
-            <div className="relative">
+            <div data-aos= "fade-up" className="relative">
               <svg width="110" height="110">
                 <circle
                   cx="55"
@@ -97,8 +98,8 @@ const GrowthRate = () => {
             </div>
 
             <div>
-              <h2 className="font-bold text-lg">Scalable Solutions</h2>
-              <p className="text-lg text-gray-300 mt-2">
+              <h2 data-aos= "fade-up" className="font-bold text-lg">Scalable Solutions</h2>
+              <p data-aos= "fade-up" className="text-lg text-gray-300 mt-2">
                 End to end fiber optic cable connectivity for stable
               </p>
             </div>
@@ -106,7 +107,7 @@ const GrowthRate = () => {
 
           {/* CARD 2 */}
           <div className="flex items-center gap-5">
-            <div className="relative">
+            <div data-aos= "fade-up" className="relative">
               <svg width="110" height="110">
                 <circle cx="55" cy="55" r="45" stroke="#fff" strokeWidth="7" fill="none" />
                 <circle
@@ -131,8 +132,8 @@ const GrowthRate = () => {
             </div>
 
             <div>
-              <h2 className="font-bold text-lg">Automation Features</h2>
-              <p className="text-lg text-gray-300 mt-2">
+              <h2 data-aos= "fade-up" className="font-bold text-lg">Automation Features</h2>
+              <p data-aos= "fade-up" className="text-lg text-gray-300 mt-2">
                 End to end fiber optic cable connectivity for stable
               </p>
             </div>
@@ -140,7 +141,7 @@ const GrowthRate = () => {
 
           {/* CARD 3 */}
           <div className="flex items-center gap-5">
-            <div className="relative">
+            <div data-aos= "fade-up" className="relative">
               <svg width="110" height="110">
                 <circle cx="55" cy="55" r="45" stroke="#fff" strokeWidth="7" fill="none" />
                 <circle
@@ -165,8 +166,8 @@ const GrowthRate = () => {
             </div>
 
             <div>
-              <h2 className="font-bold text-lg">24/7 Support</h2>
-              <p className="text-lg text-gray-300 mt-2">
+              <h2 data-aos= "fade-up" className="font-bold text-lg">24/7 Support</h2>
+              <p data-aos= "fade-up" className="text-lg text-gray-300 mt-2">
                 End to end fiber optic cable connectivity for stable
               </p>
             </div>

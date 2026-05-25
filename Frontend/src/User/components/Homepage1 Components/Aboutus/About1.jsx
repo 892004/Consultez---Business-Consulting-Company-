@@ -6,6 +6,8 @@ import { HiOutlineLightBulb } from "react-icons/hi2";
 import { LiaPencilRulerSolid } from "react-icons/lia";
 import Aboutuser from '../../../../assets/Images/about-user.png'
 import Sign from '../../../../assets/Images/signature.png'
+import { motion } from "framer-motion";
+
 const About1 = () => {
   const [pos, setPos] = useState({ x: 0, y: 0 });
 
@@ -86,22 +88,22 @@ const About1 = () => {
       </div>
 
       {/* RIGHT SIDE */}
-      <div className="right h-full w-1/2 relative px-20 py-4 flex flex-col items-start justify-start gap-4">
+      <div  className="right h-full w-1/2 relative px-20 py-4 flex flex-col items-start justify-start gap-4">
         <button className="bg-[#C6D936] px-10 py-2 rounded-full font-semibold text-sm">
           ABOUT US
         </button>
-        <p className="text-5xl font-bold leading-15">
+        <p data-aos="fade-right" className="text-5xl font-bold leading-15">
           The Journey Behind Our <br />
           Business Success
         </p>
 
-        <span className="text-xl text-gray-600">
+        <span data-aos="fade-left" className="text-xl text-gray-600">
           Consultez is the go-to hub for early adopters and innovation <br />
           enthusiasts, offering cutting-edge technology
         </span>
 
         {/* Creative Solution  */}
-        <div className="creative-solution flex flex-row gap-1 cursor-pointer group">
+        <div data-aos="fade-right"  className="creative-solution flex flex-row gap-1 cursor-pointer group">
           <span
             className="text-7xl transform transition duration-500 
                    group-hover:rotate-y-[360deg]"
@@ -119,7 +121,7 @@ const About1 = () => {
         </div>
 
         {/*Actionable Solutions */}
-        <div className="creative-solution flex flex-row gap-1 cursor-pointer group">
+        <div data-aos="fade-left" className="creative-solution flex flex-row gap-1 cursor-pointer group">
           <span
             className="text-7xl transform transition duration-500 
                    group-hover:rotate-y-[360deg]"

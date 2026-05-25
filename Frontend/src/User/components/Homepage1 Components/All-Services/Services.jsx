@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useEffect } from "react";
 import serviceBG from "../../../../assets/Images/service-shape.png";
 import serviceLine from "../../../../assets/Images/service-line.png";
 import BannerArray from "../../../../assets/Images/service-arry-color.png";
@@ -14,15 +14,9 @@ import ServiceImg3 from "../../../../assets/Images/service-image3.jpg";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Autoplay } from "swiper/modules";
-import { fadeUp, slideLeft } from "../../../utils/animation";
 
 const Services = () => {
-  const ref = useRef();
-
-  useEffect(() => {
-    fadeUp(ref.current);
-    slideLeft(ref.slideLeft);
-  }, []);
+  
   const serviceCards = [
     {
       id: 1,
@@ -57,14 +51,13 @@ const Services = () => {
   ];
   return (
     <section
-      ref={ref}
       className="services relative h-[130vh] w-full mt-30 flex flex-row overflow-hidden translate-y-[2px]"
     >
       <div className="left h-full w-[60%] relative">
-        <button className="py-2 px-10 rounded-full bg-[#C6D936] mx-35 my-30 absolute font-semibold tracking-widest text-sm">
+        <button data-aos = 'fade-right' className="py-2 px-10 rounded-full bg-[#C6D936] mx-35 my-30 absolute font-semibold tracking-widest text-sm">
           SERVICE AREA
         </button>
-        <h2 className="mx-35 my-42 absolute text-5xl font-bold leading-16">
+        <h2 data-aos = 'fade-right'  className="mx-35 my-42 absolute text-5xl font-bold leading-16">
           Empowering Your Brand <br />
           Innovative Solution
         </h2>
@@ -93,7 +86,7 @@ const Services = () => {
         </Swiper>
       </div>
       <div className="right h-full w-[40%] bg-[#1A4137] p-10 relative">
-        <button className="py-4 px-14 font-medium bg-[#C6D936] mx-35 my-30 absolute">
+        <button data-aos = 'fade-left'  className="py-4 px-14 font-medium bg-[#C6D936] mx-35 my-30 absolute">
           All Services
         </button>
         <img

@@ -1,5 +1,4 @@
-import React, { useState, useEffect , useRef } from "react";
-import {fadeUp , slideLeft} from '../utils/animation';
+import React, { useState, useEffect } from "react";
 import homepage1Banner from "../../assets/Images/banner-image1.jpg";
 import homepage2Banner from "../../assets/Images/banner-image2.jpg";
 import homepage3Banner from "../../assets/Images/banner-image3.jpg";
@@ -18,13 +17,7 @@ import Faqs from "../components/Homepage1 Components/FAQS/Faqs";
 import Testimonial from "../components/Homepage1 Components/Testimonials/Testimonial";
 import Blog from "../components/Homepage1 Components/Blogs/Blog";
 
-const Homepage1 = () => {
-  const ref = useRef();
-
-  useEffect(()=>{
-    fadeUp(ref.current);
-    slideLeft(ref.slideLeft);
-  },[])
+const Homepage1 = () => {;
   const HeroSec = [
     {
       id: 1,
@@ -124,7 +117,7 @@ const Homepage1 = () => {
         z-0"
         ></div>
 
-      <div ref={ref} className="absolute top-0 left-10  h-full w-full flex items-center justify-between px-10 text-white">
+      <div data-aos="fade-up" className="absolute top-0 left-10  h-full w-full flex items-center justify-between px-10 text-white">
         <div>
           <p  className="font-bold text-[#C6D936] underline opacity-full">
             {current.title}
